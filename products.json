@@ -1,0 +1,250 @@
+{
+  "data": [
+    {
+      "id": "tm15kl5gtq",
+      "name": {
+        "tr": "Kayısı reçeli",
+        "en": "Apricot jam",
+        "ar": "مربى المشمش"
+      },
+      "description": {
+        "tr": "Yarısı meyve, ev usulü kaynatılmış kayısı reçeli; bez kapaklı cam kavanozda.",
+        "en": "Home-style apricot jam, half fruit, in a cloth-lidded glass jar.",
+        "ar": "مربى مشمش بطريقة منزلية، نصفه فاكهة، في برطمان زجاجي بغطاء قماشي."
+      },
+      "path": "kayisi-recel",
+      "icon": "local_florist",
+      "category": "kahvalti",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "lfg6vh"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "id": "fjhafo152s",
+      "name": {
+        "tr": "Çiçek balı",
+        "en": "Wildflower honey",
+        "ar": "عسل أزهار"
+      },
+      "description": {
+        "tr": "Dağ çiçeklerinden süzülmüş, katkısız çiçek balı; cam kavanozda.",
+        "en": "Strained wildflower honey with nothing added, in a glass jar.",
+        "ar": "عسل أزهار جبلية مصفّى دون أي إضافات، في برطمان زجاجي."
+      },
+      "path": "cicek-bali",
+      "icon": "emoji_nature",
+      "category": "kahvalti",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "0bs5le"
+        ],
+        "footer": []
+      },
+      "index": 1
+    },
+    {
+      "id": "t2wg2wobra",
+      "name": {
+        "tr": "Naturel sızma zeytinyağı",
+        "en": "Extra virgin olive oil",
+        "ar": "زيت زيتون بكر ممتاز"
+      },
+      "description": {
+        "tr": "Soğuk sıkım, ilk hasat zeytinlerden; cam şişede, salata ve kahvaltı için.",
+        "en": "Cold-pressed from the first harvest, in a glass bottle, for salads and breakfast.",
+        "ar": "معصور على البارد من حصاد أول، في زجاجة زجاجية، للسلطات والفطور."
+      },
+      "path": "sizma-zeytinyagi",
+      "icon": "opacity",
+      "category": "kahvalti",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "361gz9"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "ivgst7600z",
+      "name": {
+        "tr": "Üzüm pekmezi",
+        "en": "Grape molasses (pekmez)",
+        "ar": "دبس العنب (بكمز)"
+      },
+      "description": {
+        "tr": "Üzüm şırasının geleneksel yöntemle kaynatılmasıyla yapılır; kahvaltıda ve tatlılarda kullanılır.",
+        "en": "Made by boiling grape must the traditional way; used at breakfast and in desserts.",
+        "ar": "يُصنع بغلي عصير العنب بالطريقة التقليدية؛ يُستخدم في الفطور والحلويات."
+      },
+      "path": "uzum-pekmezi",
+      "icon": "water_drop",
+      "category": "kahvalti",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "khtpse"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "5xhrcyjd7j",
+      "name": {
+        "tr": "Fıstıklı baklava",
+        "en": "Pistachio baklava",
+        "ar": "بقلاوة بالفستق"
+      },
+      "description": {
+        "tr": "El açması yufkalı, bol Antep fıstıklı klasik şerbetli baklava; 24 dilim.",
+        "en": "Classic syrup baklava with hand-rolled layers and plenty of Antep pistachios; 24 pieces.",
+        "ar": "بقلاوة كلاسيكية بالقطر بطبقات مفرودة يدويًا وكثير من فستق عنتاب؛ 24 قطعة."
+      },
+      "path": "fistikli-baklava",
+      "icon": "cake",
+      "category": "tatli",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "8miomc"
+        ],
+        "footer": []
+      },
+      "index": 4
+    },
+    {
+      "id": "1f5dsbwmxs",
+      "name": {
+        "tr": "Antep fıstık ezmesi",
+        "en": "Antep pistachio paste",
+        "ar": "معجون فستق عنتاب"
+      },
+      "description": {
+        "tr": "Öğütülmüş Antep fıstığından, az şekerli; ekmek, krep ve tatlılarda kullanılır.",
+        "en": "Ground Antep pistachios with a little sugar, used on bread, crêpes and in desserts.",
+        "ar": "من فستق عنتاب المطحون مع قليل من السكر، يُستخدم مع الخبز والكريب والحلويات."
+      },
+      "path": "antep-fistik-ezmesi",
+      "icon": "blender",
+      "category": "tatli",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "7n6a5x"
+        ],
+        "footer": []
+      },
+      "index": 5
+    },
+    {
+      "id": "r42q99suri",
+      "name": {
+        "tr": "Kavrulmuş tuzlu Antep fıstığı (kabuklu)",
+        "en": "Roasted salted Antep pistachios (in shell)",
+        "ar": "فستق عنتاب محمّص ومملّح (بقشره)"
+      },
+      "description": {
+        "tr": "Kabuklu, taş fırında kavrulmuş, hafif tuzlu; çerez olarak sunulur.",
+        "en": "In-shell, stone-oven roasted and lightly salted; served as a snack.",
+        "ar": "بقشره، محمّص في فرن حجري وخفيف الملوحة؛ يُقدَّم كوجبة خفيفة."
+      },
+      "path": "kavrulmus-tuzlu-fistik",
+      "icon": "eco",
+      "category": "fistik",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "zbtfya"
+        ],
+        "footer": []
+      },
+      "index": 6
+    },
+    {
+      "id": "us7tx58ndu",
+      "name": {
+        "tr": "İç Antep fıstığı (çiğ)",
+        "en": "Raw shelled Antep pistachios",
+        "ar": "فستق عنتاب نيء مقشّر"
+      },
+      "description": {
+        "tr": "Elde soyulmuş, çiğ, yeşil iç fıstık; pasta, tatlı ve salatalarda kullanılır.",
+        "en": "Hand-shelled raw green pistachio kernels, used in baking, desserts and salads.",
+        "ar": "لبّ فستق أخضر نيء ومقشّر يدويًا، يُستخدم في المعجنات والحلويات والسلطات."
+      },
+      "path": "ic-antep-fistigi",
+      "icon": "eco",
+      "category": "fistik",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "uatqr3"
+        ],
+        "footer": []
+      },
+      "index": 7
+    }
+  ],
+  "desc": [
+    {
+      "path": "net",
+      "name": {
+        "tr": "Net miktar",
+        "en": "Net quantity",
+        "ar": "الكمية الصافية"
+      }
+    },
+    {
+      "path": "mense",
+      "name": {
+        "tr": "Menşe",
+        "en": "Origin",
+        "ar": "المنشأ"
+      }
+    },
+    {
+      "path": "skt",
+      "name": {
+        "tr": "Son tüketim tarihi",
+        "en": "Best-before date",
+        "ar": "تاريخ الانتهاء"
+      }
+    },
+    {
+      "path": "kayit",
+      "name": {
+        "tr": "İşletme kayıt no",
+        "en": "Registration no.",
+        "ar": "رقم تسجيل المنشأة"
+      }
+    }
+  ],
+  "desing": {
+    "header": [],
+    "body": [
+      "cbpkh8"
+    ],
+    "footer": []
+  },
+  "modulestatus": {
+    "img": true,
+    "bgimg": true,
+    "detail": true
+  }
+}

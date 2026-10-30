@@ -1,0 +1,77 @@
+{
+  "name": "Contact 6",
+  "desing": {
+    "max": "1200px",
+    "badge": {
+      "tr": "İletişim",
+      "en": "Contact"
+    },
+    "title": {
+      "tr": "Bizimle İletişime Geçin",
+      "en": "Get In Touch With Us"
+    },
+    "description": {
+      "tr": "Projeleriniz için profesyonel destek alın. Size en kısa sürede dönüş yapacağız.",
+      "en": "Get professional support for your projects. We will get back to you as soon as possible."
+    },
+    "phone": "0531 679 10 14",
+    "email": "info@ajansmobil.com",
+    "address": {
+      "tr": "Gaziantep, Türkiye",
+      "en": "Gaziantep, Turkey"
+    },
+    "hours": {
+      "tr": "Pzt-Cum: 09:00 - 18:00",
+      "en": "Mon-Fri: 09:00 - 18:00"
+    },
+    "addressTitle": {
+      "tr": "Adres",
+      "en": "Address"
+    },
+    "phoneTitle": {
+      "tr": "Telefon",
+      "en": "Phone"
+    },
+    "phoneRaw": "05316791014",
+    "emailTitle": {
+      "tr": "E-posta",
+      "en": "E-mail"
+    },
+    "hoursTitle": {
+      "tr": "Çalışma Saatleri",
+      "en": "Working Hours"
+    },
+    "namePlaceholder": {
+      "tr": "Adınız Soyadınız",
+      "en": "Your Full Name"
+    },
+    "emailPlaceholder": {
+      "tr": "E-posta Adresiniz",
+      "en": "Your E-mail Address"
+    },
+    "phonePlaceholder": {
+      "tr": "Telefon Numaranız",
+      "en": "Your Phone Number"
+    },
+    "servicePlaceholder": {
+      "tr": "Hizmet Seçiniz",
+      "en": "Select a Service"
+    },
+    "services": {
+      "tr": "web|Web Tasarım|mobil|Mobil Uygulama|seo|SEO Hizmeti|sosyal|Sosyal Medya|reklam|Reklam Yönetimi|foto|Fotoğraf Çekimi",
+      "en": "web|Web Design|mobil|Mobile App|seo|SEO Service|sosyal|Social Media|reklam|Ad Management|foto|Photography"
+    },
+    "messagePlaceholder": {
+      "tr": "Mesajınız...",
+      "en": "Your message..."
+    },
+    "submitText": {
+      "tr": "Mesaj Gönder",
+      "en": "Send Message"
+    }
+  },
+  "category": "contact",
+  "description": "Modern iletişim formu modülü. Gradient ikon kartları, profesyonel form tasarımı ve hover efektleri.",
+  "version": "1.0.0",
+  "icon": "contact_mail"
+}

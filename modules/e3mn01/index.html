@@ -1,0 +1,527 @@
+<header class="modulex-site-header">
+  <!-- TOP BAR -->
+  <div class="modulex-top-bar">
+    <div class="modulex-container modulex-top-container">
+      <div class="modulex-top-left">{{welcomeText}}</div>
+      <div class="modulex-top-right">
+        {{langbar}}
+        {{toplinks}}
+      </div>
+    </div>
+  </div>
+
+  <!-- MIDDLE BAR -->
+  <div class="modulex-middle-bar">
+    <div class="modulex-container modulex-middle-container">
+      <a href="/{{lang}}/" class="modulex-logo-link" aria-label="{{web-name}}">
+        <img src="/img/{{logo}}?v={{random}}" alt="{{web-name}} Logo" class="modulex-logo" loading="lazy" />
+      </a>
+
+      <div class="modulex-search-box">
+        <span class="material-symbols-outlined modulex-search-icon" aria-hidden="true"
+          >search</span
+        >
+        <input type="text" placeholder="{{searchPlaceholder}}" aria-label="{{searchAria}}" />
+        <button type="submit" aria-label="{{searchBtn}}">{{searchBtn}}</button>
+      </div>
+
+      <div class="modulex-user-buttons">
+        <button>
+          <span class="material-symbols-outlined modulex-icon-favori" aria-hidden="true"
+            >favorite</span
+          >
+          {{favoritesText}}
+        </button>
+        <button type="button" onclick="window.location.href='/{{lang}}/{{urlsepet}}/'">
+          <span class="material-symbols-outlined modulex-icon-sepet" aria-hidden="true"
+            >shopping_cart</span
+          >
+          {{cartText}}
+          <span class="modulex-mxbadge" data-mx-sepet-sayi data-mx-bos="1" aria-label="{{sepetSayiAria}}">0</span>
+        </button>
+        <button type="button" data-mx-uye-goster="misafir" onclick="window.location.href='/{{lang}}/{{girisUrl}}/'">
+          <span class="material-symbols-outlined modulex-icon-giris" aria-hidden="true"
+            >person</span
+          >
+          {{loginText}}
+        </button>
+        <button type="button" data-mx-uye-goster="giris" style="display: none" onclick="window.location.href='/{{lang}}/{{hesabimUrl}}/'">
+          <span class="material-symbols-outlined modulex-icon-giris" aria-hidden="true"
+            >manage_accounts</span
+          >
+          {{hesabimText}}
+        </button>
+        <button type="button" class="modulex-mxcikis" data-mx-uye-goster="giris" data-mx-cikis style="display: none" aria-label="{{cikisText}}" title="{{cikisText}}">
+          <span class="material-symbols-outlined" aria-hidden="true">logout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV BAR -->
+  <div class="modulex-nav-bar">
+    <div class="modulex-container modulex-nav-container">
+      <div class="modulex-category-wrapper">
+        <div class="modulex-cat-btn-wrapper">
+          <button class="modulex-cat-btn">
+            <span class="material-symbols-outlined" aria-hidden="true">grid_view</span> {{allCategoriesText}}
+          </button>
+          <div class="modulex-cat-dropdown">
+            <ul>
+              {{categoryhtml}}
+              <li class="modulex-view-all"><button>+ {{viewAllText}}</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="modulex-main-menu">
+        {{html}}
+      </nav>
+    </div>
+  </div>
+</header>
+
+<style>
+  .modulex-top-bar,
+  .modulex-middle-bar,
+  .modulex-nav-bar {
+    width: 100vw;
+    min-width: 0;
+    left: 0;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .modulex-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .modulex-top-bar {
+    background: var(--mxe-cd9624, #cd9624);
+    color: var(--mxe-on, #fff);
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .modulex-top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modulex-top-right a {
+    color: var(--mxe-on, #fff);
+    text-decoration: none;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+
+  .modulex-middle-bar {
+    background: #fff;
+    border-bottom: 1px solid var(--mxe-eee, #eee);
+    padding: 16px 0;
+  }
+
+  .modulex-middle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .modulex-logo-link {
+    display: inline-flex;
+    align-items: center;
+    max-width: min(40vw, 220px);
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .modulex-logo {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  /* SVG logo korumasi (2026-09-13): intrinsic boyutu OLMAYAN bir SVG
+     (yalniz viewBox) `height:auto` ile flex icinde 0'a coker ve logo
+     GORUNMEZ. `max-height` yetmez -- ust sinirdir, olcu vermez. */
+  .modulex-logo[src*=".svg"] {
+    height: 60px;
+    width: auto;
+  }
+
+  .modulex-search-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: var(--mxe-cd9624, #cd9624);
+    border: 1px solid var(--mxe-cd9624, #cd9624);
+    border-radius: 5px;
+    margin: 0 20px;
+    height: 44px;
+  }
+
+  .modulex-search-icon {
+    padding: 0 12px;
+    color: #d60000;
+    font-size: 22px;
+  }
+
+  .modulex-search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .modulex-search-box button {
+    background: var(--mxe-cd9624, #cd9624);
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-weight: bold;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .modulex-user-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .modulex-user-buttons button {
+    background: #fff;
+    border: 1px solid var(--mxe-ccc, #ccc);
+    padding: 10px 14px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition:
+      background 0.2s,
+      color 0.2s,
+      border 0.2s;
+  }
+
+  .modulex-user-buttons button:hover {
+    background: var(--mxe-cd9624, #cd9624);
+    border: 1px solid var(--mxe-cd9624, #cd9624);
+    color: var(--mxe-on, #fff);
+  }
+
+  .modulex-user-buttons button:hover .material-symbols-outlined {
+    color: var(--mxe-on, #fff);
+  }
+
+  .modulex-icon-favori.material-symbols-outlined {
+    color: var(--mxe-cd9624, #cd9624);
+  }
+
+  .modulex-icon-sepet.material-symbols-outlined {
+    color: var(--mxe-cd9624, #cd9624);
+  }
+
+  .modulex-icon-giris.material-symbols-outlined {
+    color: var(--mxe-cd9624, #cd9624);
+  }
+
+  .modulex-nav-bar {
+    background: var(--mxe-cd9624, #cd9624);
+    padding: 0;
+  }
+
+  .modulex-nav-container {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+  }
+
+  .modulex-cat-btn-wrapper {
+    position: relative;
+  }
+
+  .modulex-cat-btn-wrapper:hover .modulex-cat-dropdown {
+    display: block;
+  }
+
+  .modulex-cat-btn {
+    height: 44px;
+    background: var(--mxe-238b23, #238b23);
+    color: var(--mxe-on, #fff);
+    border: none;
+    padding: 10px 32px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .modulex-cat-dropdown {
+    display: none;
+    background: #fff;
+    border: 1px solid var(--mxe-eee, #eee);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+  }
+
+  .modulex-cat-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    min-width: 200px;
+  }
+
+  .modulex-cat-dropdown li {
+    position: relative;
+  }
+
+  .modulex-cat-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .modulex-cat-dropdown a:hover {
+    background: var(--mxe-f7f7f7, #f7f7f7);
+    color: var(--mxe-cd9624, #cd9624);
+  }
+
+  .modulex-has-submenu:hover .modulex-submenu {
+    display: block;
+  }
+
+  .modulex-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: white;
+    border: 1px solid var(--mxe-eee, #eee);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    border-radius: 0 6px 6px 0;
+    z-index: 101;
+  }
+
+  .modulex-submenu li a {
+    color: #000;
+    padding: 10px 16px;
+    display: block;
+  }
+
+  .modulex-submenu li a:hover {
+    background-color: var(--mxe-f7f7f7, #f7f7f7);
+  }
+
+
+  /* PLAN-PRO F3: MxStore uye/sepet baglantisi — sepet rozeti (data-mx-sepet-sayi; 0 iken data-mx-bos) */
+  .modulex-mxbadge,
+  .modulex-login > .modulex-mxbadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    margin-left: 2px;
+    border-radius: 999px;
+    background: #e11d48;
+    color: var(--mxe-on, #ffffff) !important;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .modulex-mxbadge[data-mx-bos],
+  .modulex-login > .modulex-mxbadge[data-mx-bos] {
+    display: none !important;
+  }
+
+  .modulex-mxcikis {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+    transition: opacity 0.2s ease;
+  }
+
+  .modulex-mxcikis:hover {
+    opacity: 0.75;
+  }
+
+  @media (max-width: 768px) {
+    .modulex-mxbadge {
+      min-width: 16px;
+      height: 16px;
+      font-size: 10px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .modulex-mxbadge,
+    .modulex-mxcikis {
+      transition: none !important;
+    }
+  }
+
+  .modulex-view-all button {
+    background: var(--mxe-cd9624, #cd9624);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+
+  .modulex-main-menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 44px;
+  }
+
+  .modulex-main-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 14px;
+    transition: background-color 0.2s, color 0.2s, border-radius 0.2s;
+    cursor: pointer;
+  }
+
+  .modulex-main-menu a:hover,
+  .modulex-main-menu a:focus {
+    background: var(--mxe-238b23, #238b23);
+    color: var(--mxe-on, #fff);
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  /* Responsive: Mobil */
+  @media screen and (max-width: 768px) {
+    .modulex-top-bar {
+      display: none;
+    }
+
+    .modulex-middle-container {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 15px;
+    }
+
+    .modulex-search-box {
+      margin: 0;
+      width: 100%;
+      flex: unset;
+    }
+
+    .modulex-logo-link {
+      max-width: min(70vw, 200px);
+    }
+
+    .modulex-logo {
+      max-height: 60px;
+    }
+
+    .modulex-user-buttons {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .modulex-user-buttons button {
+      font-size: 0;
+      padding: 8px;
+    }
+
+    .modulex-user-buttons button .material-symbols-outlined {
+      font-size: 22px;
+    }
+
+    .modulex-nav-container {
+      flex-direction: column;
+      height: auto;
+      gap: 0;
+      padding: 10px 15px;
+    }
+
+    .modulex-main-menu {
+      display: none;
+    }
+
+    .modulex-category-wrapper {
+      display: none;
+    }
+
+    .modulex-cat-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  /* W2: erisilebilirlik — animasyon kapatma */
+  @media (prefers-reduced-motion: reduce) {
+    [class*="modulex"],
+    [class*="modulex"] * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+<script>
+  /* PLAN-PRO F3: cikis dugmesi (data-mx-cikis) → MxStore.uye.cikis; rozet/gorunurluk MxStore tarafindan */
+  (window.mxStoreQ = window.mxStoreQ || []).push(function (S) {
+    var bs = document.querySelectorAll("[data-mx-cikis]");
+    for (var i = 0; i < bs.length; i++) {
+      if (bs[i].getAttribute("data-mx-cikis-bagli")) {
+        continue;
+      }
+      bs[i].setAttribute("data-mx-cikis-bagli", "1");
+      bs[i].addEventListener("click", function (ev) {
+        ev.preventDefault();
+        S.uye.cikis().then(function () {
+          window.location.href = "/{{lang}}/";
+        });
+      });
+    }
+  });
+  window.addEventListener("load", function () {
+    if (!window.MxStore) {
+      var s = document.createElement("script");
+      s.src = "/src/mx-store.js";
+      document.head.appendChild(s);
+    }
+  });
+</script>

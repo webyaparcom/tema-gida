@@ -1,0 +1,41 @@
+{
+  "id": "kalitepolitikamiz",
+  "name": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "description": {
+    "tr": "Kalite politikamız",
+    "en": "Our quality policy",
+    "ar": "سياسة الجودة لدينا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "kalitepolitikamiz",
+  "icon": "verified",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {
+    "tr": "<h2>Kalite Politikamız</h2>\n<p>Her partinin kaydı tutulur; etiketler Türk Gıda Kodeksi’ne uygun hazırlanır ve ürünler son tüketim tarihi yakın olmadan gönderilir.</p>",
+    "en": "<h2>Our quality policy</h2>\n<p>Every batch is recorded; labels are prepared in line with the Turkish Food Codex and products are shipped well before their best-before date.</p>",
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>يُسجَّل كل دفعة؛ وتُعدّ البطاقات وفق دستور الغذاء التركي وتُشحن المنتجات قبل وقت كافٍ من تاريخ انتهائها.</p>"
+  },
+  "title": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "date": "2026-10-30T18:55:14.123Z",
+  "update": "2026-10-30T19:21:38.955Z"
+}

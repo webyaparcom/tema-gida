@@ -1,0 +1,39 @@
+{
+  "id": "rxgql300zl",
+  "name": {
+    "tr": "Baklava ve ezme",
+    "en": "Baklava and paste",
+    "ar": "البقلاوة والمعجون"
+  },
+  "description": {
+    "tr": "Baklava ve ezme",
+    "en": "Baklava and paste",
+    "ar": "البقلاوة والمعجون"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "tatli",
+  "icon": "cake",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "chyw8d"
+    ],
+    "footer": []
+  },
+  "index": 1,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Baklava ve ezme",
+    "en": "Baklava and paste",
+    "ar": "البقلاوة والمعجون"
+  },
+  "date": "2026-10-30T18:55:15.055Z",
+  "update": "2026-10-30T19:21:38.700Z"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Kategori Filtre",
+  "description": "Musteri tarafinda urun filtreleme modulu. Kategori secimi, fiyat araligi ve stok durumu filtreleri icerir. Masaustunde sidebar, mobilde accordion duzeni. Istemci tarafinda filtreleme yapar.",
+  "version": "1.0.0",
+  "icon": "filter_list",
+  "category": "e-commerce",
+  "desing": {
+    "color": "#333333",
+    "bgcolor": "#ffffff",
+    "bordercolor": "#e0e0e0",
+    "activecolor": "#2196f3",
+    "activebg": "#e3f2fd",
+    "title": { "tr": "Filtreler", "en": "Filters" },
+    "categoryTitle": { "tr": "Kategoriler", "en": "Categories" },
+    "priceTitle": { "tr": "Fiyat Araligi", "en": "Price Range" },
+    "stockTitle": { "tr": "Stok Durumu", "en": "Stock Status" },
+    "inStockText": { "tr": "Stokta Var", "en": "In Stock" },
+    "outOfStockText": { "tr": "Tukenmis", "en": "Out of Stock" },
+    "allCategories": { "tr": "Tum Kategoriler", "en": "All Categories" },
+    "clearFilters": { "tr": "Filtreleri Temizle", "en": "Clear Filters" },
+    "resultCount": { "tr": "urun bulundu", "en": "products found" },
+    "search": false,
+    "sort": false,
+    "urlState": false,
+    "searchLabel": { "tr": "Urun ara", "en": "Search products", "ar": "ابحث عن منتج" },
+    "searchPlaceholder": { "tr": "Urun adi veya kategori…", "en": "Product name or category…", "ar": "اسم المنتج أو الفئة…" },
+    "sortLabel": { "tr": "Siralama", "en": "Sort by", "ar": "ترتيب حسب" },
+    "sortDefault": { "tr": "Onerilen siralama", "en": "Recommended", "ar": "الترتيب الموصى به" },
+    "sortPriceAsc": { "tr": "Fiyat: dusukten yuksege", "en": "Price: low to high", "ar": "السعر: من الأقل إلى الأعلى" },
+    "sortPriceDesc": { "tr": "Fiyat: yuksekten dusuge", "en": "Price: high to low", "ar": "السعر: من الأعلى إلى الأقل" },
+    "sortNew": { "tr": "En yeniler", "en": "Newest first", "ar": "الأحدث أولًا" }
+  },
+  "data": {
+    "categories": [
+      { "slug": "kuruyemis", "name": { "tr": "Kuruyemis", "en": "Nuts" }, "count": 12 },
+      { "slug": "kuru-meyve", "name": { "tr": "Kuru Meyve", "en": "Dried Fruit" }, "count": 8 },
+      { "slug": "baharat", "name": { "tr": "Baharat", "en": "Spices" }, "count": 15 },
+      { "slug": "lokum", "name": { "tr": "Lokum", "en": "Turkish Delight" }, "count": 6 }
+    ],
+    "priceRanges": [
+      { "min": 0, "max": 100, "label": { "tr": "0 - 100 TL", "en": "0 - 100 TL" } },
+      { "min": 100, "max": 250, "label": { "tr": "100 - 250 TL", "en": "100 - 250 TL" } },
+      { "min": 250, "max": 500, "label": { "tr": "250 - 500 TL", "en": "250 - 500 TL" } },
+      { "min": 500, "max": null, "label": { "tr": "500 TL ve uzeri", "en": "500 TL and above" } }
+    ]
+  }
+}

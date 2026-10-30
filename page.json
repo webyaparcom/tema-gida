@@ -1,0 +1,136 @@
+{
+  "data": [
+    {
+      "id": "5mokzkxxlo",
+      "name": {
+        "tr": "Ürünlerimiz",
+        "en": "Our products",
+        "ar": "منتجاتنا"
+      },
+      "description": {
+        "tr": "Antep fıstığı, baklava, pekmez, zeytinyağı, bal ve reçel.",
+        "en": "Antep pistachios, baklava, grape molasses, olive oil, honey and jam.",
+        "ar": "فستق عنتاب والبقلاوة ودبس العنب وزيت الزيتون والعسل والمربى."
+      },
+      "path": "urunlerimiz",
+      "icon": "storefront",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "chyw8d"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "id": "bnxoonevi9",
+      "name": {
+        "tr": "Üretim sürecimiz",
+        "en": "Our production process",
+        "ar": "مراحل إنتاجنا"
+      },
+      "description": {
+        "tr": "Bahçeden paketlemeye altı adımda üretim.",
+        "en": "Production in six steps, from the orchard to the pack.",
+        "ar": "الإنتاج في ست خطوات من البستان إلى العبوة."
+      },
+      "path": "uretim-sureci",
+      "icon": "agriculture",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "8gply0",
+          "0qg3so",
+          "5mbdsk"
+        ],
+        "footer": []
+      },
+      "index": 1
+    },
+    {
+      "id": "69ecnnmqdt",
+      "name": {
+        "tr": "Belgelerimiz",
+        "en": "Our documents",
+        "ar": "وثائقنا"
+      },
+      "description": {
+        "tr": "Belgeler, etiket bilgisi ve alerjen bilgilendirmesi.",
+        "en": "Documents, label information and allergen details.",
+        "ar": "الوثائق وبيانات البطاقة ومعلومات مسببات الحساسية."
+      },
+      "path": "belgelerimiz",
+      "icon": "verified",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "9niajv",
+          "c4nbvi"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "gj42enqjti",
+      "name": {
+        "tr": "Tarifler",
+        "en": "Recipes",
+        "ar": "وصفات"
+      },
+      "description": {
+        "tr": "Fıstık, bal ve pekmezle kolay tarifler.",
+        "en": "Easy recipes with pistachios, honey and grape molasses.",
+        "ar": "وصفات سهلة بالفستق والعسل والدبس."
+      },
+      "path": "tarifler",
+      "icon": "restaurant_menu",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "uuzz8e",
+          "udbgkl",
+          "0efw7b"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "3kcl7f6gfu",
+      "name": {
+        "tr": "Toptan satış",
+        "en": "Wholesale",
+        "ar": "البيع بالجملة"
+      },
+      "description": {
+        "tr": "Koli ve kurumsal hediye paketleri için teklif.",
+        "en": "Quotes for cartons and corporate gift boxes.",
+        "ar": "عروض أسعار للكراتين وعلب الهدايا المؤسسية."
+      },
+      "path": "toptan-satis",
+      "icon": "local_shipping",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "46jzqe",
+          "0vw39y"
+        ],
+        "footer": []
+      },
+      "index": 4
+    }
+  ],
+  "desc": []
+}

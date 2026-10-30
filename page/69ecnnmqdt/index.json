@@ -1,0 +1,40 @@
+{
+  "id": "69ecnnmqdt",
+  "name": {
+    "tr": "Belgelerimiz",
+    "en": "Our documents",
+    "ar": "وثائقنا"
+  },
+  "description": {
+    "tr": "Belgeler, etiket bilgisi ve alerjen bilgilendirmesi.",
+    "en": "Documents, label information and allergen details.",
+    "ar": "الوثائق وبيانات البطاقة ومعلومات مسببات الحساسية."
+  },
+  "keyword": {
+    "tr": "belgeler, etiket, alerjen",
+    "en": "documents, label, allergen",
+    "ar": "وثائق، بطاقة، مسببات الحساسية"
+  },
+  "path": "belgelerimiz",
+  "icon": "verified",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "9niajv",
+      "c4nbvi"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Belgelerimiz",
+    "en": "Our documents",
+    "ar": "وثائقنا"
+  },
+  "date": "2026-10-30T18:55:15.302Z",
+  "update": "2026-10-30T19:21:38.883Z"
+}

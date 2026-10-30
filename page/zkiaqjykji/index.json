@@ -1,0 +1,39 @@
+{
+  "id": "zkiaqjykji",
+  "name": {
+    "tr": "Antep fıstığı",
+    "en": "Antep pistachios",
+    "ar": "فستق عنتاب"
+  },
+  "description": {
+    "tr": "Antep fıstığı",
+    "en": "Antep pistachios",
+    "ar": "فستق عنتاب"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "fistik",
+  "icon": "eco",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "chyw8d"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Antep fıstığı",
+    "en": "Antep pistachios",
+    "ar": "فستق عنتاب"
+  },
+  "date": "2026-10-30T18:55:15.037Z",
+  "update": "2026-10-30T19:21:38.697Z"
+}

@@ -1,0 +1,416 @@
+<style>
+  .modulex {
+    width: 280px;
+    min-width: 280px;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+  }
+
+  .modulexFilterToggle {
+    display: none;
+  }
+
+  .modulexFilterPanel {
+    background: --bgcolor--;
+    border: 1px solid --bordercolor--;
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  .modulexFilterSection {
+    border-bottom: 1px solid --bordercolor--;
+    padding: 12px 0;
+  }
+
+  .modulexFilterHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: --color--;
+  }
+
+  .modulexFilterBody {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .modulexFilterItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: --color--;
+  }
+
+  .modulexFilterItem:hover {
+    background: --activebg--;
+  }
+
+  /* Checkbox / toggle görünümü: tek kaynak public/src/css.css (Matrix kuralı) */
+
+  .modulexFilterItem input[type="radio"] {
+    accent-color: --activecolor--;
+  }
+
+  .modulexFilterItem.active {
+    background: --activebg--;
+    color: --activecolor--;
+    font-weight: bold;
+  }
+
+  .modulexClearFilters {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    background: transparent;
+    border: 1px solid --bordercolor--;
+    border-radius: 6px;
+    cursor: pointer;
+    color: --color--;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .modulexResultCount {
+    padding: 10px 0;
+    font-size: 14px;
+    color: --activecolor--;
+    font-weight: bold;
+  }
+
+  /* Mobil: accordion duzeni */
+  @media screen and (max-width: 768px) {
+    .modulex {
+      width: 100%;
+      min-width: unset;
+      position: static;
+    }
+    .modulexFilterToggle {
+      display: flex;
+      width: 100%;
+      padding: 12px 16px;
+      background: --bgcolor--;
+      border: 1px solid --bordercolor--;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: bold;
+      color: --color--;
+    }
+    .modulexFilterPanel {
+      display: none;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+    }
+    .modulexFilterPanel.open {
+      display: block;
+    }
+  }
+
+
+  /* ---- Opt-in arama + siralama (desing.search / desing.sort) — yalniz yeni siniflar, mantiksal CSS ---- */
+  .modulexKfVh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .modulexKfSearch {
+    display: flex; align-items: center; gap: 8px; min-height: 44px; padding-inline: 12px;
+    border: 1px solid --bordercolor--; border-radius: 8px; background: --bgcolor--; color: --color--;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .modulexKfSearch:focus-within { border-color: --activecolor--; box-shadow: 0 0 0 3px rgba(127, 127, 127, 0.2); }
+  .modulexKfSearch input { flex: 1; min-width: 0; min-height: 42px; border: 0; background: transparent; color: inherit; font: inherit; outline: none; }
+  .modulexKfSortBox { display: flex; flex-direction: column; gap: 6px; }
+  .modulexKfSortLabel { font-weight: bold; color: --color--; }
+  .modulexKfSortSel {
+    min-height: 44px; width: 100%; padding-inline: 10px; border: 1px solid --bordercolor--; border-radius: 8px;
+    background: --bgcolor--; color: --color--; font: inherit; cursor: pointer;
+  }
+  .modulexKfSortSel:focus-visible, .modulexKfSearch input:focus-visible { outline: 2px solid --activecolor--; outline-offset: 2px; }
+
+  /* W2 — animasyon, mobil, erisilebilirlik */
+  @keyframes modulexW2Enter {
+    from { opacity: 0.98; }
+    to { opacity: 1; }
+  }
+
+  [class*="modulex"] {
+    box-sizing: border-box;
+    animation: modulexW2Enter 0.3s ease;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  a, button, [role="button"], input[type="submit"], input[type="button"] {
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    [class*="modulex"] {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [class*="modulex"] {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+
+<div class="modulex"{{kfRoot}}>
+  <!-- Mobil filtre toggle butonu -->
+  <button class="modulexFilterToggle" onclick="toggleFilterPanel()">
+    <span class="material-symbols-outlined">filter_list</span>
+    {{title}}
+    <span class="material-symbols-outlined modulexFilterArrow">expand_more</span>
+  </button>
+
+  <!-- Filtre paneli -->
+  <div class="modulexFilterPanel" id="filterPanel">
+    <!-- Sonuc sayisi -->
+    <div class="modulexResultCount" id="resultCount"></div>
+
+    {{kfSearch}}
+    {{kfSort}}
+
+    <!-- Kategori filtresi -->
+    <div class="modulexFilterSection">
+      <div class="modulexFilterHead" onclick="toggleSection(this)">
+        <span>{{categoryTitle}}</span>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="modulexFilterBody">
+        {{categoryHtml}}
+      </div>
+    </div>
+
+    <!-- Fiyat araligi filtresi -->
+    <div class="modulexFilterSection">
+      <div class="modulexFilterHead" onclick="toggleSection(this)">
+        <span>{{priceTitle}}</span>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="modulexFilterBody">
+        {{priceHtml}}
+      </div>
+    </div>
+
+    <!-- Stok durumu filtresi -->
+    <div class="modulexFilterSection">
+      <div class="modulexFilterHead" onclick="toggleSection(this)">
+        <span>{{stockTitle}}</span>
+        <span class="material-symbols-outlined">expand_more</span>
+      </div>
+      <div class="modulexFilterBody">
+        <label class="modulexFilterItem">
+          <input type="checkbox" name="stock" value="in_stock" onchange="applyFilters()" checked />
+          <span>{{inStockText}}</span>
+        </label>
+        <label class="modulexFilterItem">
+          <input type="checkbox" name="stock" value="out_of_stock" onchange="applyFilters()" />
+          <span>{{outOfStockText}}</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Filtreleri temizle -->
+    <button class="modulexClearFilters" onclick="clearAllFilters()">
+      <span class="material-symbols-outlined">clear_all</span>
+      {{clearFilters}}
+    </button>
+  </div>
+</div>
+
+<script>
+function toggleFilterPanel() {
+  var panel = document.getElementById("filterPanel");
+  var arrow = document.querySelector(".modulexFilterArrow");
+  if (panel.classList.contains("open")) {
+    panel.classList.remove("open");
+    arrow.textContent = "expand_more";
+  } else {
+    panel.classList.add("open");
+    arrow.textContent = "expand_less";
+  }
+}
+
+function toggleSection(el) {
+  var body = el.nextElementSibling;
+  var icon = el.querySelector(".material-symbols-outlined");
+  if (body.style.display === "none") {
+    body.style.display = "flex";
+    icon.textContent = "expand_more";
+  } else {
+    body.style.display = "none";
+    icon.textContent = "chevron_right";
+  }
+}
+
+function applyFilters() {
+  var cards = document.querySelectorAll(".modulexCard");
+  var checkedCats = document.querySelectorAll('input[name="category"]:checked');
+  var checkedStocks = document.querySelectorAll('input[name="stock"]:checked');
+  var checkedPrice = document.querySelector('input[name="price"]:checked');
+
+  var selectedCats = [];
+  for (var i = 0; i < checkedCats.length; i++) {
+    selectedCats.push(checkedCats[i].value);
+  }
+  var selectedStocks = [];
+  for (var i = 0; i < checkedStocks.length; i++) {
+    selectedStocks.push(checkedStocks[i].value);
+  }
+
+  var visibleCount = 0;
+  for (var i = 0; i < cards.length; i++) {
+    var card = cards[i];
+    var cat = card.getAttribute("data-category");
+    var stock = card.getAttribute("data-stock");
+    var price = parseFloat(card.getAttribute("data-price") || "0");
+
+    var catMatch = selectedCats.length === 0 || selectedCats.indexOf("all") > -1 || selectedCats.indexOf(cat) > -1;
+    var stockMatch = selectedStocks.length === 0 || selectedStocks.indexOf(stock) > -1;
+    var priceMatch = true;
+    if (checkedPrice && checkedPrice.value !== "all") {
+      var range = checkedPrice.value.split("-");
+      var min = parseFloat(range[0]);
+      var max = range[1] === "null" ? Infinity : parseFloat(range[1]);
+      priceMatch = price >= min && price <= max;
+    }
+
+    if (catMatch && stockMatch && priceMatch) {
+      card.style.display = "";
+      visibleCount++;
+    } else {
+      card.style.display = "none";
+    }
+  }
+
+  var countEl = document.getElementById("resultCount");
+  if (countEl) {
+    countEl.textContent = visibleCount + " {{resultCount}}";
+  }
+}
+
+function clearAllFilters() {
+  var inputs = document.querySelectorAll('.modulexFilterPanel input[type="checkbox"], .modulexFilterPanel input[type="radio"]');
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].value === "all" || inputs[i].value === "in_stock") {
+      inputs[i].checked = true;
+    } else {
+      inputs[i].checked = false;
+    }
+  }
+  applyFilters();
+}
+
+/* ---- Opt-in arama + siralama + ?q=&cat=&sort= URL durumu (yalniz kok enh isaretliyse; ham mx-filtre.js) ----
+   Suzme sayfadaki vitrin kartlarini ([data-mx-id][data-category]; eticaret-urun-vitrin) nitelikleriyle yapar. */
+(function () {
+  var kok = document.getElementById("modulex-kf-{{id}}");
+  if (!kok || kok.getAttribute("data-kf-enh") !== "1") { return; }
+  function hazir(fn) {
+    if (window.mxLoad) { fn(); }
+    else if (document.readyState === "complete") { setTimeout(fn, 50); }
+    else { window.addEventListener("load", fn); }
+  }
+  function dizi(nl) { var o = []; var n; for (n = 0; n < nl.length; n++) { o.push(nl[n]); } return o; }
+  function basla() {
+    var MxF = window.MxFiltre;
+    if (!MxF) { return; }
+    /* kokun kendi kontrolleri disindaki kartlar: vitrin kartlari kart kokunde data-category tasir (sepet dugmesi tasimaz) */
+    var kartlar = dizi(document.querySelectorAll("[data-mx-id][data-category]"));
+    if (!kartlar.length) { return; }
+    var items = [];
+    var i;
+    for (i = 0; i < kartlar.length; i++) {
+      var k = kartlar[i];
+      var tarih = parseFloat(k.getAttribute("data-date"));
+      items.push({
+        id: i,
+        name: k.getAttribute("data-mx-name") || "",
+        cat: k.getAttribute("data-category") || "",
+        stock: k.getAttribute("data-stock") || "",
+        price: parseFloat(k.getAttribute("data-price")) || 0,
+        rank: (k.getAttribute("data-new") === "1" ? 1e14 : 0) + (isFinite(tarih) ? tarih : 0)
+      });
+    }
+    var f = MxF.olustur({
+      items: items,
+      arama: { alanlar: ["name", "cat"] },
+      facets: { cat: { tip: "coklu" }, price: { tip: "aralik" }, stock: { tip: "coklu" } },
+      siralama: { priceAsc: { alan: "price", yon: 1 }, priceDesc: { alan: "price", yon: -1 }, "new": { alan: "rank", yon: -1 } },
+      url: true,
+      dil: document.documentElement.getAttribute("lang") || "tr"
+    });
+    var araEl = kok.querySelector("[data-kf-q]");
+    var sirEl = kok.querySelector("[data-kf-sort]");
+    var sayEl = kok.querySelector(".modulexResultCount");
+    var rcMetin = kok.getAttribute("data-kf-rc") || "";
+    var catIn = dizi(kok.querySelectorAll('input[name="category"]'));
+    var stockIn = dizi(kok.querySelectorAll('input[name="stock"]'));
+    var priceIn = dizi(kok.querySelectorAll('input[name="price"]'));
+
+    function sec(girdiler) {
+      var r = [];
+      var n;
+      for (n = 0; n < girdiler.length; n++) { if (girdiler[n].checked && girdiler[n].value !== "all") { r.push(girdiler[n].value); } }
+      return r;
+    }
+    kok.addEventListener("change", function (e) {
+      var t = e.target;
+      if (t.name === "category") { f.ayarla({ cat: t.value === "all" ? [] : sec(catIn) }); }
+      else if (t.name === "stock") { f.ayarla({ stock: sec(stockIn) }); }
+      else if (t.name === "price") {
+        if (t.value === "all") { f.ayarla({ price: "" }); }
+        else {
+          var p = t.value.split("-");
+          f.ayarla({ price: [parseFloat(p[0]), p[1] === "null" ? null : parseFloat(p[1])] });
+        }
+      } else if (t === sirEl) { f.sirala(sirEl.value); }
+    });
+    var sifirla = kok.querySelector("[data-kf-reset]");
+    if (sifirla) { sifirla.addEventListener("click", function () { f.sifirla(); if (araEl) { araEl.value = ""; } }); }
+    if (araEl) { MxF.aramaBagla(araEl, f, 150); }
+
+    function guncelle(s) {
+      var d = s.durum;
+      var goster = {};
+      var j;
+      for (j = 0; j < s.tumu.length; j++) { goster[s.tumu[j].id] = true; }
+      /* suzulmus + siralanmis kartlar once (kendi kapsayicilarinda), kalanlar gizli */
+      for (j = 0; j < s.tumu.length; j++) { var kt = kartlar[s.tumu[j].id]; kt.parentNode.appendChild(kt); }
+      for (j = 0; j < kartlar.length; j++) { kartlar[j].style.display = goster[j] ? "" : "none"; }
+      if (sayEl) { sayEl.textContent = s.toplam + " " + rcMetin; }
+      /* girdileri duruma esitle (URL'den gelen durum dahil); "tumu" secili = kategori suzmesi yok */
+      var cs = d.facet.cat || [];
+      for (j = 0; j < catIn.length; j++) { catIn[j].checked = catIn[j].value === "all" ? cs.length === 0 : cs.indexOf(catIn[j].value) > -1; }
+      var ss = d.facet.stock || [];
+      for (j = 0; j < stockIn.length; j++) { stockIn[j].checked = ss.indexOf(stockIn[j].value) > -1; }
+      var pr = d.facet.price;
+      for (j = 0; j < priceIn.length; j++) {
+        var v = priceIn[j].value;
+        var pv = v.split("-");
+        priceIn[j].checked = v === "all" ? !pr : !!pr && parseFloat(pv[0]) === pr[0] && (pv[1] === "null" ? pr[1] === null : parseFloat(pv[1]) === pr[1]);
+      }
+      if (araEl && document.activeElement !== araEl) { araEl.value = d.q || ""; }
+      if (sirEl) { sirEl.value = d.sirala || ""; }
+    }
+    f.abone(guncelle);
+    guncelle(f.sonuc());
+  }
+  hazir(function () {
+    if (window.MxFiltre) { basla(); }
+    else if (window.mxLoad) { window.mxLoad("mxfiltre").then(basla, function () {}); }
+  });
+})();
+</script>

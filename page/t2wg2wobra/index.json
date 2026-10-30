@@ -1,0 +1,55 @@
+{
+  "id": "t2wg2wobra",
+  "name": {
+    "tr": "Naturel sızma zeytinyağı",
+    "en": "Extra virgin olive oil",
+    "ar": "زيت زيتون بكر ممتاز"
+  },
+  "description": {
+    "tr": "Soğuk sıkım, ilk hasat zeytinlerden; cam şişede, salata ve kahvaltı için.",
+    "en": "Cold-pressed from the first harvest, in a glass bottle, for salads and breakfast.",
+    "ar": "معصور على البارد من حصاد أول، في زجاجة زجاجية، للسلطات والفطور."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "sizma-zeytinyagi",
+  "icon": "opacity",
+  "category": "kahvalti",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "361gz9"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {
+    "tr": "<p>Soğuk sıkım, ilk hasat zeytinlerden; cam şişede, salata ve kahvaltı için.</p>",
+    "en": "<p>Cold-pressed from the first harvest, in a glass bottle, for salads and breakfast.</p>",
+    "ar": "<p>معصور على البارد من حصاد أول، في زجاجة زجاجية، للسلطات والفطور.</p>"
+  },
+  "title": {
+    "tr": "Naturel sızma zeytinyağı",
+    "en": "Extra virgin olive oil",
+    "ar": "زيت زيتون بكر ممتاز"
+  },
+  "date": "2026-10-30T18:55:15.135Z",
+  "update": "2026-10-30T19:21:38.780Z",
+  "desc": {
+    "net": "500 ml",
+    "mense": "Gaziantep (Oguzeli)",
+    "skt": "2028-01-31",
+    "kayit": "TR-27-DEMO-0106"
+  },
+  "price": 380,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-urun-zeytinyagi.webp",
+  "badges": [],
+  "sku": "sizma-zeytinyagi"
+}

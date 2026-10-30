@@ -1,0 +1,39 @@
+{
+  "id": "5mokzkxxlo",
+  "name": {
+    "tr": "Ürünlerimiz",
+    "en": "Our products",
+    "ar": "منتجاتنا"
+  },
+  "description": {
+    "tr": "Antep fıstığı, baklava, pekmez, zeytinyağı, bal ve reçel.",
+    "en": "Antep pistachios, baklava, grape molasses, olive oil, honey and jam.",
+    "ar": "فستق عنتاب والبقلاوة ودبس العنب وزيت الزيتون والعسل والمربى."
+  },
+  "keyword": {
+    "tr": "antep fıstığı, baklava, pekmez",
+    "en": "antep pistachios, baklava, grape molasses",
+    "ar": "فستق عنتاب، بقلاوة، دبس"
+  },
+  "path": "urunlerimiz",
+  "icon": "storefront",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "chyw8d"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Ürünlerimiz",
+    "en": "Our products",
+    "ar": "منتجاتنا"
+  },
+  "date": "2026-10-30T18:55:15.292Z",
+  "update": "2026-10-30T19:21:38.878Z"
+}

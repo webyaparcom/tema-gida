@@ -1,0 +1,55 @@
+{
+  "id": "tm15kl5gtq",
+  "name": {
+    "tr": "Kayısı reçeli",
+    "en": "Apricot jam",
+    "ar": "مربى المشمش"
+  },
+  "description": {
+    "tr": "Yarısı meyve, ev usulü kaynatılmış kayısı reçeli; bez kapaklı cam kavanozda.",
+    "en": "Home-style apricot jam, half fruit, in a cloth-lidded glass jar.",
+    "ar": "مربى مشمش بطريقة منزلية، نصفه فاكهة، في برطمان زجاجي بغطاء قماشي."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "kayisi-recel",
+  "icon": "local_florist",
+  "category": "kahvalti",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "lfg6vh"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {
+    "tr": "<p>Yarısı meyve, ev usulü kaynatılmış kayısı reçeli; bez kapaklı cam kavanozda.</p>",
+    "en": "<p>Home-style apricot jam, half fruit, in a cloth-lidded glass jar.</p>",
+    "ar": "<p>مربى مشمش بطريقة منزلية، نصفه فاكهة، في برطمان زجاجي بغطاء قماشي.</p>"
+  },
+  "title": {
+    "tr": "Kayısı reçeli",
+    "en": "Apricot jam",
+    "ar": "مربى المشمش"
+  },
+  "date": "2026-10-30T18:55:15.159Z",
+  "update": "2026-10-30T19:21:38.794Z",
+  "desc": {
+    "net": "380 g",
+    "mense": "Gaziantep",
+    "skt": "2027-09-30",
+    "kayit": "TR-27-DEMO-0108"
+  },
+  "price": 150,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-urun-recel.webp",
+  "badges": [],
+  "sku": "kayisi-recel"
+}

@@ -1,0 +1,152 @@
+{
+  "name": "Menü E-Ticaret",
+  "desing": {
+    "logo": "logo.png",
+    "color": "#1e3046",
+    "colorhover": "#123763",
+    "height": "50px",
+    "urlsepet": "sepet",
+    "bgcolor": "#1e3046",
+    "bgcolorhover": "#123763",
+    "welcomeText": {
+      "tr": "Hoşgeldiniz!",
+      "en": "Welcome!"
+    },
+    "toplinks": {
+      "tr": "Kampanyalar|#|Sipariş Takibi|#|Yardım|#",
+      "en": "Campaigns|#|Order Tracking|#|Help|#"
+    },
+    "searchPlaceholder": {
+      "tr": "Ürün ara...",
+      "en": "Search products..."
+    },
+    "searchAria": {
+      "tr": "Ürün ara",
+      "en": "Search products"
+    },
+    "searchBtn": {
+      "tr": "ARA",
+      "en": "SEARCH"
+    },
+    "favoritesText": {
+      "tr": "Favorilerim",
+      "en": "My Favorites"
+    },
+    "cartText": {
+      "tr": "Sepetim",
+      "en": "My Cart"
+    },
+    "loginText": {
+      "tr": "Giriş Yap",
+      "en": "Log In"
+    },
+    "allCategoriesText": {
+      "tr": "Tüm Kategoriler",
+      "en": "All Categories"
+    },
+    "viewAllText": {
+      "tr": "Tümünü Gör",
+      "en": "View All"
+    },
+    "girisUrl": "login",
+    "hesabimUrl": "hesabim",
+    "hesabimText": {
+      "tr": "Hesabım",
+      "en": "My Account"
+    },
+    "cikisText": {
+      "tr": "Çıkış yap",
+      "en": "Log out"
+    },
+    "sepetSayiAria": {
+      "tr": "Sepetteki ürün adedi",
+      "en": "Items in cart"
+    }
+  },
+  "category": "menu",
+  "description": "Responsive web sitesi navigasyon menüsü. Logo, sayfa linkleri ve mobil uyumlu hamburger menü içerir.  web sitelerinde 0 projede kullanılır. PLAN-PRO F3: giriş linki data-mx-uye-goster=\"misafir\", Hesabım + Çıkış data-mx-uye-goster=\"giris\" (MxStore.uye), sepet ikonunda data-mx-sepet-sayi rozeti (MxStore.sepet; 0 iken gizli).",
+  "data": [
+    {
+      "name": {
+        "tr": "Kuruyemiş",
+        "en": "Nuts"
+      },
+      "url": "#",
+      "children": [
+        {
+          "name": {
+            "tr": "Fındık",
+            "en": "Hazelnut"
+          },
+          "url": "#"
+        },
+        {
+          "name": {
+            "tr": "Badem",
+            "en": "Almond"
+          },
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Yöresel Ürünler",
+        "en": "Local Products"
+      },
+      "url": "#",
+      "children": [
+        {
+          "name": {
+            "tr": "Pekmez",
+            "en": "Molasses"
+          },
+          "url": "#"
+        },
+        {
+          "name": {
+            "tr": "Tereyağı",
+            "en": "Butter"
+          },
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": {
+        "tr": "Kuru Meyve",
+        "en": "Dried Fruit"
+      },
+      "url": "#"
+    },
+    {
+      "name": {
+        "tr": "Yeni Ürünler",
+        "en": "New Products"
+      },
+      "url": "#"
+    },
+    {
+      "name": {
+        "tr": "Lokum",
+        "en": "Turkish Delight"
+      },
+      "url": "#"
+    },
+    {
+      "name": {
+        "tr": "Kahve",
+        "en": "Coffee"
+      },
+      "url": "#"
+    },
+    {
+      "name": {
+        "tr": "Draje",
+        "en": "Dragee"
+      },
+      "url": "#"
+    }
+  ],
+  "version": "1.1.0"
+}

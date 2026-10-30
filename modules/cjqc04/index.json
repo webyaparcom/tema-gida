@@ -1,0 +1,57 @@
+{
+  "name": "Ürün Vitrini 2 (Liste)",
+  "desing": {
+    "max": "1100px",
+    "bgcolor": "#f8fafc",
+    "cardbg": "#ffffff",
+    "bordercolor": "#e2e8f0",
+    "color": "#1e293b",
+    "pricecolor": "#DE6D26",
+    "oldpricecolor": "#94a3b8",
+    "badgecolor": "#ffffff",
+    "badgebg-new": "#16a34a",
+    "badgebg-sale": "#ea580c",
+    "buttonbg": "#DE6D26",
+    "buttoncolor": "#ffffff",
+    "showCount": 20,
+    "title": { "tr": "Ürünlerimiz", "en": "Our Products" },
+    "addToCart": { "tr": "Sepete Ekle", "en": "Add to Cart" },
+    "soldOutText": { "tr": "Tükendi", "en": "Sold Out" },
+    "newText": { "tr": "YENİ", "en": "NEW" },
+    "saleText": { "tr": "İNDİRİM", "en": "SALE" },
+    "quickViewText": { "tr": "Hızlı Görünüm", "en": "Quick View" },
+    "compareText": { "tr": "Karşılaştır", "en": "Compare" },
+    "favText": { "tr": "Favori", "en": "Favorite" }
+  },
+  "data": {
+    "products": [
+      {
+        "id": "demo-1",
+        "name": { "tr": "Örnek Ürün 1", "en": "Sample Product 1" },
+        "description": { "tr": "Kısa ürün açıklaması buraya gelir.", "en": "Short product description goes here." },
+        "price": 249.9,
+        "oldPrice": 329.9,
+        "image": "",
+        "badges": ["sale"],
+        "stock_status": "in_stock",
+        "url": "#",
+        "status": "play"
+      },
+      {
+        "id": "demo-2",
+        "name": { "tr": "Örnek Ürün 2", "en": "Sample Product 2" },
+        "description": { "tr": "Kısa ürün açıklaması buraya gelir.", "en": "Short product description goes here." },
+        "price": 149.9,
+        "image": "",
+        "badges": ["new"],
+        "stock_status": "in_stock",
+        "url": "#",
+        "status": "play"
+      }
+    ]
+  },
+  "category": "e-commerce",
+  "description": "Yatay liste görünümlü ürün vitrini (vitrin-1'in grid alternatifi). Canlı products.json kataloğunu okur, fiyatı detay dosyasından zenginleştirir; açıklama satırı, rozetler ve sepet-widget uyumlu data-mx-* sepete ekle butonu içerir. showCount ile listelenen ürün sayısı sınırlanır.",
+  "version": "1.0.0",
+  "icon": "view_list"
+}

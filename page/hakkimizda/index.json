@@ -1,0 +1,46 @@
+{
+  "name": {
+    "tr": "Hakkımızda",
+    "en": "About",
+    "ar": "من نحن"
+  },
+  "status": "play",
+  "category": "",
+  "id": "hakkimizda",
+  "url": "",
+  "path": "hakkimizda",
+  "index": 7,
+  "icon": "info",
+  "desing": {
+    "header": [],
+    "body": [
+      "e3in01"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Yeşil Kervan hikâyesi.",
+    "en": "The story of Yesil Kervan.",
+    "ar": "قصة يشيل كرفان."
+  },
+  "spot": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Hakkımızda",
+    "en": "About",
+    "ar": "من نحن"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "text": {},
+  "update": "2026-10-30T19:21:38.899Z",
+  "date": "2026-10-30"
+}

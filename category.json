@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "id": "su3ksvu7wd",
+      "name": {
+        "tr": "Kahvaltılık ve yağlar",
+        "en": "Breakfast and pantry",
+        "ar": "لوازم الفطور والزيوت"
+      },
+      "description": {
+        "tr": "Kahvaltılık ve yağlar",
+        "en": "Breakfast and pantry",
+        "ar": "لوازم الفطور والزيوت"
+      },
+      "path": "kahvalti",
+      "icon": "breakfast_dining",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "chyw8d"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "id": "rxgql300zl",
+      "name": {
+        "tr": "Baklava ve ezme",
+        "en": "Baklava and paste",
+        "ar": "البقلاوة والمعجون"
+      },
+      "description": {
+        "tr": "Baklava ve ezme",
+        "en": "Baklava and paste",
+        "ar": "البقلاوة والمعجون"
+      },
+      "path": "tatli",
+      "icon": "cake",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "chyw8d"
+        ],
+        "footer": []
+      },
+      "index": 1
+    },
+    {
+      "id": "zkiaqjykji",
+      "name": {
+        "tr": "Antep fıstığı",
+        "en": "Antep pistachios",
+        "ar": "فستق عنتاب"
+      },
+      "description": {
+        "tr": "Antep fıstığı",
+        "en": "Antep pistachios",
+        "ar": "فستق عنتاب"
+      },
+      "path": "fistik",
+      "icon": "eco",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "chyw8d"
+        ],
+        "footer": []
+      },
+      "index": 2
+    }
+  ],
+  "desc": []
+}

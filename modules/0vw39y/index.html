@@ -1,0 +1,336 @@
+<section class="modulex-contact">
+  <div class="modulex-contact-container">
+    <div class="modulex-contact-header">
+      <div class="modulex-contact-badge">{{badge}}</div>
+      <h2 class="modulex-contact-title">{{title}}</h2>
+      <p class="modulex-contact-desc">{{description}}</p>
+    </div>
+    
+    <div class="modulex-contact-content">
+      <div class="modulex-contact-info">
+        <div class="modulex-contact-info-card">
+          <div class="modulex-contact-info-icon">
+            <span class="material-symbols-outlined">location_on</span>
+          </div>
+          <div class="modulex-contact-info-text">
+            <h3>{{addressTitle}}</h3>
+            <p>{{address}}</p>
+          </div>
+        </div>
+        
+        <div class="modulex-contact-info-card">
+          <div class="modulex-contact-info-icon">
+            <span class="material-symbols-outlined">phone</span>
+          </div>
+          <div class="modulex-contact-info-text">
+            <h3>{{phoneTitle}}</h3>
+            <a href="tel:{{phoneRaw}}">{{phone}}</a>
+          </div>
+        </div>
+        
+        <div class="modulex-contact-info-card">
+          <div class="modulex-contact-info-icon">
+            <span class="material-symbols-outlined">mail</span>
+          </div>
+          <div class="modulex-contact-info-text">
+            <h3>{{emailTitle}}</h3>
+            <a href="mailto:{{email}}">{{email}}</a>
+          </div>
+        </div>
+        
+        <div class="modulex-contact-info-card">
+          <div class="modulex-contact-info-icon">
+            <span class="material-symbols-outlined">schedule</span>
+          </div>
+          <div class="modulex-contact-info-text">
+            <h3>{{hoursTitle}}</h3>
+            <p>{{hours}}</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modulex-contact-form-wrapper">
+        <form class="modulex-contact-form" action="#" method="POST">
+          <div class="modulex-contact-form-group">
+            <input type="text" id="contact-name" name="name" placeholder="{{namePlaceholder}}" required />
+          </div>
+          
+          <div class="modulex-contact-form-group">
+            <input type="email" id="contact-email" name="email" placeholder="{{emailPlaceholder}}" required />
+          </div>
+          
+          <div class="modulex-contact-form-group">
+            <input type="tel" id="contact-phone" name="phone" placeholder="{{phonePlaceholder}}" />
+          </div>
+          
+          <div class="modulex-contact-form-group">
+            <select id="contact-service" name="service" required>
+              {{servicesHtml}}
+            </select>
+          </div>
+          
+          <div class="modulex-contact-form-group">
+            <textarea id="contact-message" name="message" rows="5" placeholder="{{messagePlaceholder}}" required></textarea>
+          </div>
+          
+          <button type="submit" class="modulex-contact-submit">
+            <span>{{submitText}}</span>
+            <span class="material-symbols-outlined">send</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .modulex-contact {
+    width: 100%;
+    padding: 100px 0;
+    background: #fff;
+    position: relative;
+  }
+
+  .modulex-contact-container {
+    max-width: --max--;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .modulex-contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .modulex-contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6366f1;
+    margin-bottom: 20px;
+  }
+
+  .modulex-contact-title {
+    font-size: 44px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 16px;
+    letter-spacing: -0.5px;
+  }
+
+  .modulex-contact-desc {
+    font-size: 18px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .modulex-contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .modulex-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .modulex-contact-info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: #f8fafc;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .modulex-contact-info-card:hover {
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.1);
+    transform: translateX(5px);
+  }
+
+  .modulex-contact-info-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .modulex-contact-info-icon .material-symbols-outlined {
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .modulex-contact-info-text h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 4px;
+  }
+
+  .modulex-contact-info-text p,
+  .modulex-contact-info-text a {
+    font-size: 15px;
+    color: #64748b;
+    text-decoration: none;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+
+  .modulex-contact-info-text a:hover {
+    color: #6366f1;
+  }
+
+  .modulex-contact-form-wrapper {
+    background: #f8fafc;
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .modulex-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modulex-contact-form-group input,
+  .modulex-contact-form-group select,
+  .modulex-contact-form-group textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #fff;
+    color: #0f172a;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+  }
+
+  .modulex-contact-form-group input:focus,
+  .modulex-contact-form-group select:focus,
+  .modulex-contact-form-group textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+  }
+
+  .modulex-contact-form-group input::placeholder,
+  .modulex-contact-form-group textarea::placeholder {
+    color: #94a3b8;
+  }
+
+  .modulex-contact-form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 20px;
+    padding-right: 48px;
+  }
+
+  .modulex-contact-form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .modulex-contact-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 36px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+  }
+
+  .modulex-contact-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  }
+
+  .modulex-contact-submit .material-symbols-outlined {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .modulex-contact-submit:hover .material-symbols-outlined {
+    transform: translateX(4px);
+  }
+
+  @media (max-width: 1024px) {
+    .modulex-contact {
+      padding: 80px 0;
+    }
+
+    .modulex-contact-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .modulex-contact-title {
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .modulex-contact {
+      padding: 60px 0;
+    }
+
+    .modulex-contact-title {
+      font-size: 28px;
+    }
+
+    .modulex-contact-form-wrapper {
+      padding: 28px;
+    }
+
+    .modulex-contact-info-card {
+      padding: 20px;
+    }
+  }
+
+  /* W2: mobil tasma kontrolu */
+  @media (max-width: 768px) {
+    [class*="modulex"] {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  /* W2: erisilebilirlik — animasyon kapatma */
+  @media (prefers-reduced-motion: reduce) {
+    [class*="modulex"],
+    [class*="modulex"] * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>

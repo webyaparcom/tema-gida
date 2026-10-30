@@ -1,0 +1,339 @@
+<section class="modulexVitrin2">
+  <div class="modulexVitrin2Container">
+    <div class="modulexVitrin2Head">
+      {{tabsHtml}}
+      <div class="modulexVitrin2Title modulexVitrin2TitleSingle">
+        <span class="material-symbols-outlined" aria-hidden="true">storefront</span>
+        {{title}}
+      </div>
+    </div>
+    <div class="modulexVitrin2Grid">
+      {{html}}
+    </div>
+  </div>
+</section>
+
+<style>
+  /* eticaret-urun-vitrin-2 — tema3 Journal grid vitrin (Paket 615) */
+
+  .modulexVitrin2 {
+    width: 100%;
+    padding: 36px 20px 44px;
+    background: --bgcolor--;
+    box-sizing: border-box;
+  }
+
+  .modulexVitrin2Container {
+    max-width: --max--;
+    margin: 0 auto;
+  }
+
+  .modulexVitrin2Head {
+    margin-bottom: 22px;
+  }
+
+  .modulexVitrin2Title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: --color--;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .modulexVitrin2TitleSingle {
+    padding-bottom: 4px;
+  }
+
+  .modulexVitrin2Tabs {
+    display: none;
+    flex-wrap: wrap;
+    gap: 0;
+    border-bottom: 2px solid --bordercolor--;
+    margin-bottom: 0;
+  }
+
+  .modulexVitrin2Tabs.modulexVitrin2TabsOn {
+    display: flex;
+  }
+
+  .modulexVitrin2TabsOn + .modulexVitrin2TitleSingle,
+  .modulexVitrin2Head:has(.modulexVitrin2TabsOn) .modulexVitrin2TitleSingle {
+    display: none;
+  }
+
+  .modulexVitrin2Tab {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: --color--;
+    opacity: 0.55;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+  }
+
+  .modulexVitrin2Tab:hover {
+    opacity: 0.85;
+  }
+
+  .modulexVitrin2TabActive {
+    opacity: 1;
+    color: --accentcolor--;
+    border-bottom-color: --accentcolor--;
+  }
+
+  .modulexVitrin2Grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .modulexVitrin2Card {
+    position: relative;
+    background: --cardbg--;
+    border: 1px solid --bordercolor--;
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    animation: vitrin2In 0.45s ease both;
+  }
+
+  .modulexVitrin2Card:hover {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+
+  @keyframes vitrin2In {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .modulexVitrin2ImgLink {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .modulexVitrin2ImgWrap {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: --bordercolor--;
+  }
+
+  .modulexVitrin2ImgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+  }
+
+  .modulexVitrin2Card:hover .modulexVitrin2ImgWrap img {
+    transform: scale(1.04);
+  }
+
+  .modulexVitrin2Badges {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 2;
+  }
+
+  .modulexVitrin2Badge {
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: --badgecolor--;
+  }
+
+  .modulexVitrin2BadgeNew { background: --badgebg-new--; }
+  .modulexVitrin2BadgeSale { background: --badgebg-sale--; }
+
+  .modulexVitrin2Body {
+    padding: 12px 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+
+  .modulexVitrin2Rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: --color--;
+    opacity: 0.75;
+  }
+
+  .modulexVitrin2Stars {
+    display: inline-flex;
+    gap: 1px;
+    color: #f5a623;
+  }
+
+  .modulexVitrin2Stars .material-symbols-outlined {
+    font-size: 14px;
+    font-variation-settings: "FILL" 1;
+  }
+
+  .modulexVitrin2Name {
+    font-size: 14px;
+    font-weight: 500;
+    color: --color--;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.35;
+    cursor: pointer;
+  }
+
+  .modulexVitrin2Name:hover {
+    color: --accentcolor--;
+  }
+
+  .modulexVitrin2PriceRow {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+
+  .modulexVitrin2Price {
+    color: --pricecolor--;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .modulexVitrin2Old {
+    text-decoration: line-through;
+    color: --oldpricecolor--;
+    font-size: 13px;
+  }
+
+  .modulexVitrin2Cart {
+    width: 100%;
+    margin-top: 8px;
+    min-height: 40px;
+    padding: 8px 14px;
+    background: --buttonbg--;
+    color: --buttoncolor--;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: filter 0.2s ease, background 0.2s ease;
+  }
+
+  .modulexVitrin2Cart:hover {
+    filter: brightness(1.06);
+  }
+
+  .modulexVitrin2Cart:disabled {
+    pointer-events: none;
+    opacity: 0.45;
+  }
+
+  .modulexVitrin2Panel {
+    display: none;
+  }
+
+  .modulexVitrin2PanelActive {
+    display: contents;
+  }
+
+  @media (max-width: 1024px) {
+    .modulexVitrin2Grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .modulexVitrin2 {
+      padding: 24px 12px 32px;
+    }
+
+    .modulexVitrin2Grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .modulexVitrin2Tab {
+      padding: 10px 12px;
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .modulexVitrin2Grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .modulexVitrin2Card,
+    .modulexVitrin2Card *,
+    .modulexVitrin2Tab {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+
+<script>
+(function () {
+  var wrap = document.getElementById("vitrin2TabsWrap");
+  if (!wrap || !wrap.classList.contains("modulexVitrin2TabsOn")) {
+    return;
+  }
+  var section = wrap.closest(".modulexVitrin2");
+  if (!section) {
+    return;
+  }
+  var tabs = wrap.querySelectorAll(".modulexVitrin2Tab");
+  var panels = section.querySelectorAll(".modulexVitrin2Panel");
+  var ti;
+  for (ti = 0; ti < tabs.length; ti++) {
+    tabs[ti].addEventListener("click", function () {
+      var idx = this.getAttribute("data-vitrin-tab");
+      var tj;
+      for (tj = 0; tj < tabs.length; tj++) {
+        tabs[tj].classList.remove("modulexVitrin2TabActive");
+      }
+      this.classList.add("modulexVitrin2TabActive");
+      var pj;
+      for (pj = 0; pj < panels.length; pj++) {
+        if (panels[pj].getAttribute("data-vitrin-panel") === idx) {
+          panels[pj].classList.add("modulexVitrin2PanelActive");
+        } else {
+          panels[pj].classList.remove("modulexVitrin2PanelActive");
+        }
+      }
+    });
+  }
+})();
+</script>
