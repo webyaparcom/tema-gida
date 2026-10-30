@@ -1,0 +1,41 @@
+{
+  "id": "bnxoonevi9",
+  "name": {
+    "tr": "Üretim sürecimiz",
+    "en": "Our production process",
+    "ar": "مراحل إنتاجنا"
+  },
+  "description": {
+    "tr": "Bahçeden paketlemeye altı adımda üretim.",
+    "en": "Production in six steps, from the orchard to the pack.",
+    "ar": "الإنتاج في ست خطوات من البستان إلى العبوة."
+  },
+  "keyword": {
+    "tr": "üretim, hasat, fıstık",
+    "en": "production, harvest, pistachio",
+    "ar": "إنتاج، حصاد، فستق"
+  },
+  "path": "uretim-sureci",
+  "icon": "agriculture",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "8gply0",
+      "0qg3so",
+      "5mbdsk"
+    ],
+    "footer": []
+  },
+  "index": 1,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Üretim sürecimiz",
+    "en": "Our production process",
+    "ar": "مراحل إنتاجنا"
+  },
+  "date": "2026-10-30T18:55:15.297Z",
+  "update": "2026-10-30T19:21:38.881Z"
+}

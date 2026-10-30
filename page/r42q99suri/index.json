@@ -1,0 +1,58 @@
+{
+  "id": "r42q99suri",
+  "name": {
+    "tr": "Kavrulmuş tuzlu Antep fıstığı (kabuklu)",
+    "en": "Roasted salted Antep pistachios (in shell)",
+    "ar": "فستق عنتاب محمّص ومملّح (بقشره)"
+  },
+  "description": {
+    "tr": "Kabuklu, taş fırında kavrulmuş, hafif tuzlu; çerez olarak sunulur.",
+    "en": "In-shell, stone-oven roasted and lightly salted; served as a snack.",
+    "ar": "بقشره، محمّص في فرن حجري وخفيف الملوحة؛ يُقدَّم كوجبة خفيفة."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "kavrulmus-tuzlu-fistik",
+  "icon": "eco",
+  "category": "fistik",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "zbtfya"
+    ],
+    "footer": []
+  },
+  "index": 6,
+  "url": "",
+  "text": {
+    "tr": "<p>Kabuklu, taş fırında kavrulmuş, hafif tuzlu; çerez olarak sunulur.</p>",
+    "en": "<p>In-shell, stone-oven roasted and lightly salted; served as a snack.</p>",
+    "ar": "<p>بقشره، محمّص في فرن حجري وخفيف الملوحة؛ يُقدَّم كوجبة خفيفة.</p>"
+  },
+  "title": {
+    "tr": "Kavrulmuş tuzlu Antep fıstığı (kabuklu)",
+    "en": "Roasted salted Antep pistachios (in shell)",
+    "ar": "فستق عنتاب محمّص ومملّح (بقشره)"
+  },
+  "date": "2026-10-30T18:55:15.079Z",
+  "update": "2026-10-30T19:21:38.730Z",
+  "desc": {
+    "net": "500 g",
+    "mense": "Gaziantep",
+    "skt": "2027-05-31",
+    "kayit": "TR-27-DEMO-0102"
+  },
+  "price": 520,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-urun-fistik-2.webp",
+  "badges": [
+    "sale"
+  ],
+  "sku": "kavrulmus-tuzlu-fistik",
+  "oldPrice": 580
+}

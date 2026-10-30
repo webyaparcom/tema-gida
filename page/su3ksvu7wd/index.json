@@ -1,0 +1,39 @@
+{
+  "id": "su3ksvu7wd",
+  "name": {
+    "tr": "Kahvaltılık ve yağlar",
+    "en": "Breakfast and pantry",
+    "ar": "لوازم الفطور والزيوت"
+  },
+  "description": {
+    "tr": "Kahvaltılık ve yağlar",
+    "en": "Breakfast and pantry",
+    "ar": "لوازم الفطور والزيوت"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "kahvalti",
+  "icon": "breakfast_dining",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "chyw8d"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Kahvaltılık ve yağlar",
+    "en": "Breakfast and pantry",
+    "ar": "لوازم الفطور والزيوت"
+  },
+  "date": "2026-10-30T18:55:15.062Z",
+  "update": "2026-10-30T19:21:38.704Z"
+}

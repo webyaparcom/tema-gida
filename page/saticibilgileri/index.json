@@ -1,0 +1,41 @@
+{
+  "id": "saticibilgileri",
+  "name": {
+    "tr": "Satıcı Bilgileri",
+    "en": "Seller Information",
+    "ar": "بيانات البائع"
+  },
+  "description": {
+    "tr": "Satıcı Bilgileri",
+    "en": "Seller Information",
+    "ar": "بيانات البائع"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "satici-bilgileri",
+  "icon": "gavel",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 14,
+  "url": "",
+  "text": {
+    "tr": "<h2>Satıcı Bilgileri</h2>\n<p>Unvan: Yeşil Kervan Ticaret A.Ş. (kurgusal) · Adres: Atatürk Bulvarı No: 12, Şahinbey, Gaziantep (kurgusal adres) · Telefon: +90 342 000 00 00 · E-posta: destek@yeilkervan.example · Mersis No: DEMO-0000000000000000</p>\n<p>Bu bilgiler gerçek bir işletmeye ait değildir.</p>\n<p><em>Bu metin demo amaçlı örnektir; hukuki danışmanlık yerine geçmez.</em></p>",
+    "en": "<h2>Seller Information</h2>\n<p>Company name: Yeşil Kervan Trading Inc. (fictional) · Address: 12 Ataturk Boulevard, Sahinbey, Gaziantep (fictional address) · Phone: +90 342 000 00 00 · Email: destek@yeilkervan.example · Mersis No: DEMO-0000000000000000</p>\n<p>This information does not belong to a real business.</p>\n<p><em>This text is a sample for demonstration purposes and is not legal advice.</em></p>",
+    "ar": "<h2>بيانات البائع</h2>\n<p>اسم الشركة: Yeşil Kervan للتجارة (افتراضية) · العنوان: شارع أتاتورك رقم 12، شاهين بي، غازي عنتاب (عنوان افتراضي) · الهاتف: +90 342 000 00 00 · البريد: destek@yeilkervan.example · رقم ميرسيس: DEMO-0000000000000000</p>\n<p>هذه البيانات لا تخص نشاطًا تجاريًا حقيقيًا.</p>\n<p><em>هذا النص مثال لأغراض العرض التجريبي ولا يُعدّ استشارة قانونية.</em></p>"
+  },
+  "title": {
+    "tr": "Satıcı Bilgileri",
+    "en": "Seller Information",
+    "ar": "بيانات البائع"
+  },
+  "date": "2026-10-30T18:55:14.257Z",
+  "update": "2026-10-30T19:21:39.051Z"
+}

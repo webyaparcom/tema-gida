@@ -1,0 +1,41 @@
+{
+  "id": "gj42enqjti",
+  "name": {
+    "tr": "Tarifler",
+    "en": "Recipes",
+    "ar": "وصفات"
+  },
+  "description": {
+    "tr": "Fıstık, bal ve pekmezle kolay tarifler.",
+    "en": "Easy recipes with pistachios, honey and grape molasses.",
+    "ar": "وصفات سهلة بالفستق والعسل والدبس."
+  },
+  "keyword": {
+    "tr": "tarif, baklava, fıstık",
+    "en": "recipe, baklava, pistachio",
+    "ar": "وصفة، بقلاوة، فستق"
+  },
+  "path": "tarifler",
+  "icon": "restaurant_menu",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "uuzz8e",
+      "udbgkl",
+      "0efw7b"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Tarifler",
+    "en": "Recipes",
+    "ar": "وصفات"
+  },
+  "date": "2026-10-30T18:55:15.325Z",
+  "update": "2026-10-30T19:21:38.885Z"
+}

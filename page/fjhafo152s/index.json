@@ -1,0 +1,57 @@
+{
+  "id": "fjhafo152s",
+  "name": {
+    "tr": "Çiçek balı",
+    "en": "Wildflower honey",
+    "ar": "عسل أزهار"
+  },
+  "description": {
+    "tr": "Dağ çiçeklerinden süzülmüş, katkısız çiçek balı; cam kavanozda.",
+    "en": "Strained wildflower honey with nothing added, in a glass jar.",
+    "ar": "عسل أزهار جبلية مصفّى دون أي إضافات، في برطمان زجاجي."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "cicek-bali",
+  "icon": "emoji_nature",
+  "category": "kahvalti",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "0bs5le"
+    ],
+    "footer": []
+  },
+  "index": 1,
+  "url": "",
+  "text": {
+    "tr": "<p>Dağ çiçeklerinden süzülmüş, katkısız çiçek balı; cam kavanozda.</p>",
+    "en": "<p>Strained wildflower honey with nothing added, in a glass jar.</p>",
+    "ar": "<p>عسل أزهار جبلية مصفّى دون أي إضافات، في برطمان زجاجي.</p>"
+  },
+  "title": {
+    "tr": "Çiçek balı",
+    "en": "Wildflower honey",
+    "ar": "عسل أزهار"
+  },
+  "date": "2026-10-30T18:55:15.146Z",
+  "update": "2026-10-30T19:21:38.787Z",
+  "desc": {
+    "net": "450 g",
+    "mense": "Gaziantep (Islahiye)",
+    "skt": "2028-06-30",
+    "kayit": "TR-27-DEMO-0107"
+  },
+  "price": 360,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-urun-bal.webp",
+  "badges": [
+    "new"
+  ],
+  "sku": "cicek-bali"
+}

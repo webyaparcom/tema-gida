@@ -1,0 +1,40 @@
+{
+  "id": "3kcl7f6gfu",
+  "name": {
+    "tr": "Toptan satış",
+    "en": "Wholesale",
+    "ar": "البيع بالجملة"
+  },
+  "description": {
+    "tr": "Koli ve kurumsal hediye paketleri için teklif.",
+    "en": "Quotes for cartons and corporate gift boxes.",
+    "ar": "عروض أسعار للكراتين وعلب الهدايا المؤسسية."
+  },
+  "keyword": {
+    "tr": "toptan, kurumsal hediye",
+    "en": "wholesale, corporate gifts",
+    "ar": "جملة، هدايا مؤسسية"
+  },
+  "path": "toptan-satis",
+  "icon": "local_shipping",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "46jzqe",
+      "0vw39y"
+    ],
+    "footer": []
+  },
+  "index": 4,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Toptan satış",
+    "en": "Wholesale",
+    "ar": "البيع بالجملة"
+  },
+  "date": "2026-10-30T18:55:15.337Z",
+  "update": "2026-10-30T19:21:38.888Z"
+}

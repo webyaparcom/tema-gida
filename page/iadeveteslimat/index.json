@@ -1,0 +1,41 @@
+{
+  "id": "iadeveteslimat",
+  "name": {
+    "tr": "İade ve Teslimat",
+    "en": "Returns and Delivery",
+    "ar": "الاسترجاع والتسليم"
+  },
+  "description": {
+    "tr": "İade ve Teslimat",
+    "en": "Returns and Delivery",
+    "ar": "الاسترجاع والتسليم"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "iade-ve-teslimat",
+  "icon": "gavel",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "index": 11,
+  "url": "",
+  "text": {
+    "tr": "<h2>İade ve Teslimat</h2>\n<p>Siparişler 1–3 iş günü içinde kargoya verilir. 500 ₺ ve üzeri siparişlerde kargo ücretsizdir; altındaki siparişlerde kargo ücreti 49,90 ₺’dir.</p>\n<p>14 gün içinde cayma hakkınızı kullanabilirsiniz; ürün kullanılmamış ve ambalajı bozulmamış olmalıdır.</p>\n<p>Gıda ürünlerinde, ambalajı açılmış veya tüketime hazırlanmış ürünlerde cayma hakkı kullanılamaz; çabuk bozulabilen ürünler ve ambalajı açılmış gıdalar iade alınmaz (Mesafeli Sözleşmeler Yönetmeliği md. 15). Ayıplı veya hasarlı teslim edilen ürünlerde teslimattan sonraki 3 gün içinde bildirim yapınız. Son tüketim tarihi her ürünün etiketinde yazar.</p>\n<p><em>Bu metin demo amaçlı örnektir; hukuki danışmanlık yerine geçmez.</em></p>",
+    "en": "<h2>Returns and Delivery</h2>\n<p>Orders are handed to the carrier within 1–3 business days. Shipping is free for orders of 500 TRY and above; below that the shipping fee is 49.90 TRY.</p>\n<p>You may use your right of withdrawal within 14 days; the product must be unused and in its original packaging.</p>\n<p>The right of withdrawal does not apply to food whose packaging has been opened or that has been prepared for consumption, nor to perishable goods (Article 15 of the Distance Contracts Regulation). Report damaged or defective deliveries within 3 days of delivery. The best-before date is printed on each product label.</p>\n<p><em>This text is a sample for demonstration purposes and is not legal advice.</em></p>",
+    "ar": "<h2>الاسترجاع والتسليم</h2>\n<p>تُسلَّم الطلبات إلى شركة الشحن خلال 1–3 أيام عمل. الشحن مجاني للطلبات التي تبلغ 500 ليرة تركية فأكثر، وتبلغ رسوم الشحن 49.90 ليرة للطلبات الأقل.</p>\n<p>يمكنك ممارسة حق العدول خلال 14 يومًا، بشرط أن يكون المنتج غير مستخدم وفي عبوته الأصلية.</p>\n<p>لا ينطبق حق العدول على المواد الغذائية التي فُتحت عبواتها أو جُهّزت للاستهلاك ولا على السلع سريعة التلف (المادة 15 من لائحة العقود عن بُعد). أبلغ عن أي تلف أو عيب في الطرد خلال 3 أيام من التسليم. يُطبع تاريخ الانتهاء على بطاقة كل منتج.</p>\n<p><em>هذا النص مثال لأغراض العرض التجريبي ولا يُعدّ استشارة قانونية.</em></p>"
+  },
+  "title": {
+    "tr": "İade ve Teslimat",
+    "en": "Returns and Delivery",
+    "ar": "الاسترجاع والتسليم"
+  },
+  "date": "2026-10-30T18:55:14.257Z",
+  "update": "2026-10-30T19:21:39.016Z"
+}

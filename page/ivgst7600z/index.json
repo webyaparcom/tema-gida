@@ -1,0 +1,55 @@
+{
+  "id": "ivgst7600z",
+  "name": {
+    "tr": "Üzüm pekmezi",
+    "en": "Grape molasses (pekmez)",
+    "ar": "دبس العنب (بكمز)"
+  },
+  "description": {
+    "tr": "Üzüm şırasının geleneksel yöntemle kaynatılmasıyla yapılır; kahvaltıda ve tatlılarda kullanılır.",
+    "en": "Made by boiling grape must the traditional way; used at breakfast and in desserts.",
+    "ar": "يُصنع بغلي عصير العنب بالطريقة التقليدية؛ يُستخدم في الفطور والحلويات."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "uzum-pekmezi",
+  "icon": "water_drop",
+  "category": "kahvalti",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "khtpse"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {
+    "tr": "<p>Üzüm şırasının geleneksel yöntemle kaynatılmasıyla yapılır; kahvaltıda ve tatlılarda kullanılır.</p>",
+    "en": "<p>Made by boiling grape must the traditional way; used at breakfast and in desserts.</p>",
+    "ar": "<p>يُصنع بغلي عصير العنب بالطريقة التقليدية؛ يُستخدم في الفطور والحلويات.</p>"
+  },
+  "title": {
+    "tr": "Üzüm pekmezi",
+    "en": "Grape molasses (pekmez)",
+    "ar": "دبس العنب (بكمز)"
+  },
+  "date": "2026-10-30T18:55:15.110Z",
+  "update": "2026-10-30T19:21:38.761Z",
+  "desc": {
+    "net": "700 g",
+    "mense": "Gaziantep (Nizip)",
+    "skt": "2027-10-31",
+    "kayit": "TR-27-DEMO-0105"
+  },
+  "price": 190,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-urun-pekmez.webp",
+  "badges": [],
+  "sku": "uzum-pekmezi"
+}

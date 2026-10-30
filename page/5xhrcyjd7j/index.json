@@ -1,0 +1,57 @@
+{
+  "id": "5xhrcyjd7j",
+  "name": {
+    "tr": "Fıstıklı baklava",
+    "en": "Pistachio baklava",
+    "ar": "بقلاوة بالفستق"
+  },
+  "description": {
+    "tr": "El açması yufkalı, bol Antep fıstıklı klasik şerbetli baklava; 24 dilim.",
+    "en": "Classic syrup baklava with hand-rolled layers and plenty of Antep pistachios; 24 pieces.",
+    "ar": "بقلاوة كلاسيكية بالقطر بطبقات مفرودة يدويًا وكثير من فستق عنتاب؛ 24 قطعة."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "fistikli-baklava",
+  "icon": "cake",
+  "category": "tatli",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "8miomc"
+    ],
+    "footer": []
+  },
+  "index": 4,
+  "url": "",
+  "text": {
+    "tr": "<p>El açması yufkalı, bol Antep fıstıklı klasik şerbetli baklava; 24 dilim.</p>",
+    "en": "<p>Classic syrup baklava with hand-rolled layers and plenty of Antep pistachios; 24 pieces.</p>",
+    "ar": "<p>بقلاوة كلاسيكية بالقطر بطبقات مفرودة يدويًا وكثير من فستق عنتاب؛ 24 قطعة.</p>"
+  },
+  "title": {
+    "tr": "Fıstıklı baklava",
+    "en": "Pistachio baklava",
+    "ar": "بقلاوة بالفستق"
+  },
+  "date": "2026-10-30T18:55:15.105Z",
+  "update": "2026-10-30T19:21:38.746Z",
+  "desc": {
+    "net": "500 g",
+    "mense": "Gaziantep",
+    "skt": "2026-11-30",
+    "kayit": "TR-27-DEMO-0104"
+  },
+  "price": 450,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-urun-baklava.webp",
+  "badges": [
+    "new"
+  ],
+  "sku": "fistikli-baklava"
+}

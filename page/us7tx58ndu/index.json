@@ -1,0 +1,57 @@
+{
+  "id": "us7tx58ndu",
+  "name": {
+    "tr": "İç Antep fıstığı (çiğ)",
+    "en": "Raw shelled Antep pistachios",
+    "ar": "فستق عنتاب نيء مقشّر"
+  },
+  "description": {
+    "tr": "Elde soyulmuş, çiğ, yeşil iç fıstık; pasta, tatlı ve salatalarda kullanılır.",
+    "en": "Hand-shelled raw green pistachio kernels, used in baking, desserts and salads.",
+    "ar": "لبّ فستق أخضر نيء ومقشّر يدويًا، يُستخدم في المعجنات والحلويات والسلطات."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "ic-antep-fistigi",
+  "icon": "eco",
+  "category": "fistik",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "uatqr3"
+    ],
+    "footer": []
+  },
+  "index": 7,
+  "url": "",
+  "text": {
+    "tr": "<p>Elde soyulmuş, çiğ, yeşil iç fıstık; pasta, tatlı ve salatalarda kullanılır.</p>",
+    "en": "<p>Hand-shelled raw green pistachio kernels, used in baking, desserts and salads.</p>",
+    "ar": "<p>لبّ فستق أخضر نيء ومقشّر يدويًا، يُستخدم في المعجنات والحلويات والسلطات.</p>"
+  },
+  "title": {
+    "tr": "İç Antep fıstığı (çiğ)",
+    "en": "Raw shelled Antep pistachios",
+    "ar": "فستق عنتاب نيء مقشّر"
+  },
+  "date": "2026-10-30T18:55:15.067Z",
+  "update": "2026-10-30T19:21:38.717Z",
+  "desc": {
+    "net": "250 g",
+    "mense": "Gaziantep",
+    "skt": "2027-08-31",
+    "kayit": "TR-27-DEMO-0101"
+  },
+  "price": 420,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-urun-fistik-1.webp",
+  "badges": [
+    "new"
+  ],
+  "sku": "ic-antep-fistigi"
+}

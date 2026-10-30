@@ -1,0 +1,55 @@
+{
+  "id": "1f5dsbwmxs",
+  "name": {
+    "tr": "Antep fıstık ezmesi",
+    "en": "Antep pistachio paste",
+    "ar": "معجون فستق عنتاب"
+  },
+  "description": {
+    "tr": "Öğütülmüş Antep fıstığından, az şekerli; ekmek, krep ve tatlılarda kullanılır.",
+    "en": "Ground Antep pistachios with a little sugar, used on bread, crêpes and in desserts.",
+    "ar": "من فستق عنتاب المطحون مع قليل من السكر، يُستخدم مع الخبز والكريب والحلويات."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "antep-fistik-ezmesi",
+  "icon": "blender",
+  "category": "tatli",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "7n6a5x"
+    ],
+    "footer": []
+  },
+  "index": 5,
+  "url": "",
+  "text": {
+    "tr": "<p>Öğütülmüş Antep fıstığından, az şekerli; ekmek, krep ve tatlılarda kullanılır.</p>",
+    "en": "<p>Ground Antep pistachios with a little sugar, used on bread, crêpes and in desserts.</p>",
+    "ar": "<p>من فستق عنتاب المطحون مع قليل من السكر، يُستخدم مع الخبز والكريب والحلويات.</p>"
+  },
+  "title": {
+    "tr": "Antep fıstık ezmesi",
+    "en": "Antep pistachio paste",
+    "ar": "معجون فستق عنتاب"
+  },
+  "date": "2026-10-30T18:55:15.097Z",
+  "update": "2026-10-30T19:21:38.739Z",
+  "desc": {
+    "net": "300 g",
+    "mense": "Gaziantep",
+    "skt": "2027-03-31",
+    "kayit": "TR-27-DEMO-0103"
+  },
+  "price": 340,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-urun-fistik-3.webp",
+  "badges": [],
+  "sku": "antep-fistik-ezmesi"
+}
