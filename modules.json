@@ -129,7 +129,7 @@
             "en": "Our products",
             "ar": "منتجاتنا"
           },
-          "url": "/{{lang}}/urunlerimiz/",
+          "url": "/urunlerimiz/",
           "children": [
             {
               "name": {
@@ -137,7 +137,7 @@
                 "en": "Antep pistachios",
                 "ar": "فستق عنتاب"
               },
-              "url": "/{{lang}}/fistik/"
+              "url": "/fistik/"
             },
             {
               "name": {
@@ -145,7 +145,7 @@
                 "en": "Baklava and paste",
                 "ar": "البقلاوة والمعجون"
               },
-              "url": "/{{lang}}/tatli/"
+              "url": "/tatli/"
             },
             {
               "name": {
@@ -153,7 +153,7 @@
                 "en": "Breakfast and pantry",
                 "ar": "لوازم الفطور والزيوت"
               },
-              "url": "/{{lang}}/kahvalti/"
+              "url": "/kahvalti/"
             }
           ]
         },
@@ -163,7 +163,7 @@
             "en": "Our process",
             "ar": "مراحل إنتاجنا"
           },
-          "url": "/{{lang}}/uretim-sureci/"
+          "url": "/uretim-sureci/"
         },
         {
           "name": {
@@ -171,7 +171,7 @@
             "en": "Documents",
             "ar": "وثائقنا"
           },
-          "url": "/{{lang}}/belgelerimiz/"
+          "url": "/belgelerimiz/"
         },
         {
           "name": {
@@ -179,7 +179,7 @@
             "en": "Recipes",
             "ar": "وصفات"
           },
-          "url": "/{{lang}}/tarifler/"
+          "url": "/tarifler/"
         },
         {
           "name": {
@@ -187,7 +187,7 @@
             "en": "Wholesale",
             "ar": "البيع بالجملة"
           },
-          "url": "/{{lang}}/toptan-satis/"
+          "url": "/toptan-satis/"
         }
       ],
       "index": 1
@@ -242,7 +242,8 @@
           "ar": "مراحل إنتاجنا"
         },
         "btn2_url": "uretim-sureci",
-        "stats": ""
+        "stats": "",
+        "stil": ""
       },
       "version": "1.1.0",
       "icon": "hero",
@@ -443,7 +444,8 @@
           "ar": "تصل منتجاتنا إليك في أربع خطوات."
         },
         "cardbg": "var(--mx-site-surface, #ffffff)",
-        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "#ffffff"
       },
       "version": "1.0.0",
       "icon": "timeline",
@@ -535,7 +537,8 @@
           "en": "Our products",
           "ar": "منتجاتنا"
         },
-        "btn2Url": "urunlerimiz"
+        "btn2Url": "urunlerimiz",
+        "stil": ""
       },
       "version": "1.1.0",
       "icon": "campaign",
@@ -619,6 +622,12 @@
           "tr": "Yeşil Kervan © 2026 — demo site.",
           "en": "Yesil Kervan © 2026 — demo site.",
           "ar": "يشيل كرفان © 2026 — موقع تجريبي."
+        },
+        "newsletter_url": "",
+        "newsletter_error": {
+          "tr": "Kayıt yapılamadı, lütfen daha sonra tekrar deneyin.",
+          "en": "Could not subscribe, please try again later.",
+          "ar": "تعذّر الاشتراك، يُرجى المحاولة مرة أخرى لاحقًا."
         }
       },
       "version": "2.0.0",
@@ -1013,7 +1022,8 @@
           "ar": "تواصل معنا"
         },
         "margin": "30px 0px 30px 0px",
-        "linkcolor": "var(--mx-site-primary, #2563eb)"
+        "linkcolor": "var(--mx-site-primary, #2563eb)",
+        "stil": ""
       },
       "version": "1.0.0",
       "icon": "contact_mail",
@@ -1112,7 +1122,8 @@
           "tr": "Hakkımızda",
           "en": "About us",
           "ar": "من نحن"
-        }
+        },
+        "stil": ""
       },
       "version": "1.1.0",
       "icon": "business",
@@ -5766,7 +5777,8 @@
           "en": "Newest first",
           "ar": "الأحدث أولًا"
         },
-        "currency": "₺"
+        "currency": "₺",
+        "layout": "yan"
       },
       "data": {
         "categories": [],
@@ -5928,7 +5940,8 @@
           "tr": "Üretim sürecimiz",
           "en": "Our production process",
           "ar": "مراحل إنتاجنا"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -5964,7 +5977,8 @@
           "ar": "الطريق الذي نتبعه من البستان إلى بابك."
         },
         "cardbg": "var(--mx-site-surface, #ffffff)",
-        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "#ffffff"
       },
       "data": [
         {
@@ -6344,7 +6358,8 @@
           "tr": "Belgelerimiz",
           "en": "Our documents",
           "ar": "وثائقنا"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -6380,7 +6395,8 @@
           "en": "Common questions about label information.",
           "ar": "أسئلة شائعة حول بيانات البطاقة."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)"
       },
       "data": [
         {
@@ -6486,7 +6502,8 @@
           "tr": "Tarif",
           "en": "Recipe",
           "ar": "وصفة"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -6542,7 +6559,8 @@
           "tr": "Tarif",
           "en": "Recipe",
           "ar": "وصفة"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -6598,7 +6616,8 @@
           "tr": "Tarif",
           "en": "Recipe",
           "ar": "وصفة"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -6654,7 +6673,8 @@
           "tr": "Toptan satış",
           "en": "Wholesale",
           "ar": "البيع بالجملة"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -6751,7 +6771,8 @@
           "tr": "Teklif iste",
           "en": "Request a quote",
           "ar": "اطلب عرضًا"
-        }
+        },
+        "formAction": ""
       },
       "category": "contact",
       "description": "Modern iletişim formu modülü. Gradient ikon kartları, profesyonel form tasarımı ve hover efektleri.",
@@ -6991,6 +7012,176 @@
       "path": "eticaret-urun-vitrin",
       "local": "body",
       "index": 47
+    },
+    {
+      "name": "Ürün Etiket Kartı (Gıda · TGK)",
+      "description": "Gıda ürün etiketi bilgi kartı (Türk Gıda Kodeksi): ürün adı, net miktar, içindekiler (alerjenler kalın vurgulanır), alerjen uyarısı, besin değerleri tablosu (100 g), son tüketim tarihi, saklama koşulu, üretici ve işletme kayıt/onay no. Ürün detay sayfasına gömülür; yazdırma uyumludur; çoğul biçimler Intl.PluralRules ile (Arapça 6 form). Sağlık/tedavi beyanı içermez.",
+      "version": "1.0.0",
+      "icon": "fact_check",
+      "category": "e-commerce",
+      "desing": {
+        "max": "960px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "showPrint": true,
+        "title": {
+          "tr": "Ürün Etiket Bilgileri",
+          "en": "Product Label Information",
+          "ar": "بيانات بطاقة المنتج"
+        },
+        "netLabel": {
+          "tr": "Net miktar",
+          "en": "Net quantity",
+          "ar": "الكمية الصافية"
+        },
+        "ingredientsLabel": {
+          "tr": "İçindekiler",
+          "en": "Ingredients",
+          "ar": "المكوّنات"
+        },
+        "allergenCount": {
+          "tr": {
+            "one": "Alerjen uyarısı: {n} alerjen içerir",
+            "other": "Alerjen uyarısı: {n} alerjen içerir"
+          },
+          "en": {
+            "one": "Allergen warning: contains {n} allergen",
+            "other": "Allergen warning: contains {n} allergens"
+          },
+          "ar": {
+            "zero": "لا يحتوي على مسبّبات حساسية",
+            "one": "تنبيه حساسية: يحتوي على مسبّب حساسية واحد",
+            "two": "تنبيه حساسية: يحتوي على مسبّبَي حساسية",
+            "few": "تنبيه حساسية: يحتوي على {n} مسبّبات حساسية",
+            "many": "تنبيه حساسية: يحتوي على {n} مسبّب حساسية",
+            "other": "تنبيه حساسية: يحتوي على {n} مسبّب حساسية"
+          }
+        },
+        "noAllergen": {
+          "tr": "Bilinen alerjen içermez",
+          "en": "Contains no known allergens",
+          "ar": "لا يحتوي على مسبّبات حساسية معروفة"
+        },
+        "nutritionTitle": {
+          "tr": "Besin değerleri",
+          "en": "Nutrition facts",
+          "ar": "القيم الغذائية"
+        },
+        "nutrientCol": {
+          "tr": "Besin öğesi",
+          "en": "Nutrient",
+          "ar": "العنصر الغذائي"
+        },
+        "per100Col": {
+          "tr": "100 g'da",
+          "en": "Per 100 g",
+          "ar": "لكل 100 غ"
+        },
+        "servings": {
+          "tr": {
+            "one": "Pakette yaklaşık {n} porsiyon",
+            "other": "Pakette yaklaşık {n} porsiyon"
+          },
+          "en": {
+            "one": "About {n} serving per pack",
+            "other": "About {n} servings per pack"
+          },
+          "ar": {
+            "one": "حوالي حصة واحدة في العبوة",
+            "two": "حوالي حصتين في العبوة",
+            "few": "حوالي {n} حصص في العبوة",
+            "many": "حوالي {n} حصة في العبوة",
+            "other": "حوالي {n} حصة في العبوة"
+          }
+        },
+        "expiryLabel": {
+          "tr": "Son tüketim tarihi",
+          "en": "Best before / use by",
+          "ar": "تاريخ انتهاء الصلاحية"
+        },
+        "storageLabel": {
+          "tr": "Saklama koşulu",
+          "en": "Storage conditions",
+          "ar": "شروط التخزين"
+        },
+        "producerLabel": {
+          "tr": "Üretici",
+          "en": "Producer",
+          "ar": "المنتِج"
+        },
+        "regLabel": {
+          "tr": "İşletme kayıt / onay no",
+          "en": "Establishment registration / approval no.",
+          "ar": "رقم تسجيل / اعتماد المنشأة"
+        },
+        "printLabel": {
+          "tr": "Etiketi yazdır",
+          "en": "Print label",
+          "ar": "اطبع البطاقة"
+        },
+        "tableCaption": {
+          "tr": "Ürünün 100 gramındaki ortalama besin değerleri",
+          "en": "Average nutritional values per 100 grams of the product",
+          "ar": "متوسط القيم الغذائية في كل 100 غرام من المنتج"
+        }
+      },
+      "data": {
+        "name": {
+          "tr": "Yöresel kahvaltı paketi",
+          "en": "Regional breakfast box",
+          "ar": "علبة فطور محلية"
+        },
+        "netAmount": "4 ürün · 1530 g + 500 ml",
+        "servings": 117,
+        "ingredients": {
+          "tr": "Üzüm pekmezi 700 g, çiçek balı 450 g, kayısı reçeli 380 g, naturel sızma zeytinyağı 500 ml (her ürünün kendi etiketi paketin içindedir).",
+          "en": "Grape molasses 700 g, wildflower honey 450 g, apricot jam 380 g, extra virgin olive oil 500 ml (each product carries its own label inside the box).",
+          "ar": "دبس العنب 700 غ، عسل الأزهار 450 غ، مربى المشمش 380 غ، زيت زيتون بكر ممتاز 500 مل (لكل منتج بطاقته داخل العلبة)."
+        },
+        "allergens": [],
+        "nutrition": [],
+        "expiry": "2027-09-30",
+        "storage": {
+          "tr": "Serin ve kuru yerde saklayınız. Açılan ürünü kendi etiketindeki koşula göre saklayınız.",
+          "en": "Store in a cool, dry place. Once opened, store each product as stated on its own label.",
+          "ar": "يُحفظ في مكان بارد وجاف. بعد الفتح يُحفظ كل منتج وفق بطاقته."
+        },
+        "producer": {
+          "tr": "Yeşil Kervan Gıda Ltd. Şti. (kurgusal) — Gaziantep",
+          "en": "Yesil Kervan Foods Ltd. (fictional) — Gaziantep",
+          "ar": "شركة يشيل كرفان للأغذية المحدودة (افتراضية) — غازي عنتاب"
+        },
+        "registrationNo": "TR-27-DEMO-0109",
+        "note": {
+          "tr": "Bu ürün, fıstık işlenen bir tesiste üretilmiştir; eser miktarda fıstık içerebilir. Bu etiket kurgusal bir demo ürüne aittir; bilgiler örnektir.",
+          "en": "This product is made in a facility that also processes pistachios and may contain traces of pistachio. This label belongs to a fictional demo product; the details are samples.",
+          "ar": "يُنتج هذا المنتج في منشأة تعالج الفستق أيضًا وقد يحتوي على آثار منه. تخصّ هذه البطاقة منتجًا وهميًا لأغراض العرض، والبيانات الواردة أمثلة فقط."
+        }
+      },
+      "tags": [
+        "gıda",
+        "etiket",
+        "TGK",
+        "alerjen",
+        "food",
+        "label",
+        "rtl"
+      ],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "yqxop9",
+      "path": "urun-etiket",
+      "local": "body",
+      "index": 48
     }
   ]
 }

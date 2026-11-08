@@ -1,0 +1,58 @@
+{
+  "id": "7layqbvps9",
+  "name": {
+    "tr": "Yöresel kahvaltı paketi",
+    "en": "Regional breakfast box",
+    "ar": "علبة فطور محلية"
+  },
+  "description": {
+    "tr": "Üzüm pekmezi, çiçek balı, kayısı reçeli ve sızma zeytinyağı tek kutuda; hediye için uygun.",
+    "en": "Grape molasses, wildflower honey, apricot jam and extra virgin olive oil in one box; ideal as a gift.",
+    "ar": "دبس العنب وعسل الأزهار ومربى المشمش وزيت الزيتون البكر الممتاز في علبة واحدة؛ مناسبة كهدية."
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "path": "yoresel-kahvalti-paketi",
+  "icon": "redeem",
+  "category": "kahvalti",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "yqxop9"
+    ],
+    "footer": []
+  },
+  "index": 0,
+  "url": "",
+  "text": {
+    "tr": "<p>Üzüm pekmezi, çiçek balı, kayısı reçeli ve sızma zeytinyağı tek kutuda; hediye için uygun.</p>",
+    "en": "<p>Grape molasses, wildflower honey, apricot jam and extra virgin olive oil in one box; ideal as a gift.</p>",
+    "ar": "<p>دبس العنب وعسل الأزهار ومربى المشمش وزيت الزيتون البكر الممتاز في علبة واحدة؛ مناسبة كهدية.</p>"
+  },
+  "title": {
+    "tr": "Yöresel kahvaltı paketi",
+    "en": "Regional breakfast box",
+    "ar": "علبة فطور محلية"
+  },
+  "date": "2026-11-05T22:24:10.781Z",
+  "update": "2026-11-05T23:44:19.259Z",
+  "desc": {
+    "net": "4 items · 1530 g + 500 ml",
+    "mense": "Gaziantep",
+    "skt": "2027-09-30",
+    "kayit": "TR-27-DEMO-0109"
+  },
+  "price": 990,
+  "stock": 25,
+  "stock_status": "in_stock",
+  "image": "/img/gida-tarif-2.webp",
+  "badges": [
+    "sale"
+  ],
+  "sku": "yoresel-kahvalti-paketi",
+  "oldPrice": 1080
+}
