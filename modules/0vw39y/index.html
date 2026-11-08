@@ -50,7 +50,7 @@
       </div>
       
       <div class="modulex-contact-form-wrapper">
-        <form class="modulex-contact-form" action="#" method="POST">
+        <form class="modulex-contact-form"{{formAttrs}}>
           <div class="modulex-contact-form-group">
             <input type="text" id="contact-name" name="name" placeholder="{{namePlaceholder}}" required />
           </div>
@@ -82,6 +82,24 @@
     </div>
   </div>
 </section>
+
+<script>
+/* contact-6 statik gonderim (G3 bulgusu, 30 Eki 2026): formAction yoksa form "POST #" ile sayfanin kendisine gidiyordu
+   (statik barindirmada 405/bos sayfa). Simdi alanlar mailto: taslagina cevrilip kullanicinin e-posta istemcisinde acilir. */
+document.addEventListener("submit", function (ev) {
+  var f = ev.target;
+  if (!f || !f.hasAttribute || !f.hasAttribute("data-c6-mailto")) { return; }
+  ev.preventDefault();
+  var v = function (n) { var el = f.elements[n]; return el ? String(el.value || "").trim() : ""; };
+  var svc = f.elements.service;
+  var svcText = svc && svc.selectedIndex > -1 ? String(svc.options[svc.selectedIndex].text || "").trim() : "";
+  var lines = [v("name"), v("email"), v("phone"), svcText, "", v("message")];
+  var konu = f.getAttribute("data-c6-subject") || "";
+  if (svcText) { konu = (konu ? konu + " - " : "") + svcText; }
+  window.location.href = "mailto:" + f.getAttribute("data-c6-mailto") + "?subject=" + encodeURIComponent(konu) +
+    "&body=" + encodeURIComponent(lines.filter(function (x, i) { return x || i === 4; }).join("\r\n"));
+});
+</script>
 
 <style>
   .modulex-contact {

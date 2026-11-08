@@ -21,7 +21,22 @@ try {
     /* Etiket: kategori sayfasi varsa adi, yoksa slug bas harfi buyuk */
     for (var ci = 0; ci < mxCatOrder.length; ci++) {
       var mxSlug = mxCatOrder[ci];
-      var mxLabel = mxSlug.charAt(0).toUpperCase() + mxSlug.slice(1);
+      /* G3 bulgusu (30 Eki 2026): urun.category bir kategori KIMLIGI (xm0md6h1e1) — slug'dan etiket uretmek rastgele metin
+         gosteriyordu. Once category.json adi (id/path eslesir, dil yedegi tr→en), yoksa eski slug bas harfi. */
+      var mxLabel = "";
+      var mxCats = webmakerdata.category && webmakerdata.category.data;
+      if (mxCats && mxCats.length) {
+        for (var mci = 0; mci < mxCats.length; mci++) {
+          if (mxCats[mci] && (mxCats[mci].id === mxSlug || mxCats[mci].path === mxSlug)) {
+            var mxNm = mxCats[mci].name;
+            mxLabel = (mxNm && typeof mxNm === "object") ? (mxNm[json.lang] || mxNm.tr || mxNm.en || "") : String(mxNm || "");
+            break;
+          }
+        }
+      }
+      if (!mxLabel) {
+        mxLabel = mxSlug.charAt(0).toUpperCase() + mxSlug.slice(1);
+      }
       var mxLabelObj = {};
       mxLabelObj[json.lang] = mxLabel;
       categories.push({ slug: mxSlug, name: mxLabelObj, count: mxCatMap[mxSlug] });
@@ -102,6 +117,11 @@ if (kfEnh) {
       '<option value="priceAsc">{{sortPriceAsc}}</option><option value="priceDesc">{{sortPriceDesc}}</option>' +
       '<option value="new">{{sortNew}}</option></select></label></div>';
   }
+}
+/* Opt-in yerlesim (desing.layout:"ust"): yan sutun yerine tam genislikte, ust sirada yatay panel. Varsayilan "yan" (280 px
+   sticky yan sutun) aynen kalir — filtre tek basina/urun izgarasinin ustunde kullanilinca 280 px'lik bos sutun birakiyordu. */
+if (String(kfD.layout || "").toLowerCase() === "ust") {
+  kfRoot += ' data-kf-layout="ust"';
 }
 html = html.replace(/\{\{kfRoot\}\}/g, function () { return kfRoot; });
 html = html.replace(/\{\{kfSearch\}\}/g, function () { return kfSearchHtml; });

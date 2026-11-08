@@ -108,8 +108,10 @@ function v2BuildCard(p, shownIndex, desing) {
   var hasOldPrice = hasPrice && isFinite(oldPriceNum) && oldPriceNum > priceNum;
   var pImg = p.image || "";
   var pUrl = p.url || wxLangInternalHref(p.pathnext || p.path || "");
-  var showRating = desing.showRating !== false;
-  var ratingVal = p.rating != null ? p.rating : 4.5;
+  /* G3 bulgusu (30 Eki 2026): puani olmayan urune uydurma 4,5 yildiz basiliyordu (sahte degerlendirme). Artik yildiz satiri
+     yalniz urunun GERCEK rating (>0) degeri varsa cizilir. */
+  var ratingVal = Number(p.rating);
+  var showRating = desing.showRating !== false && isFinite(ratingVal) && ratingVal > 0;
   var reviewCount = p.reviewCount != null ? p.reviewCount : "";
 
   var mxAttrs = ' data-mx-id="' + p.id + '"' +

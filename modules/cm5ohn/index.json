@@ -19,6 +19,7 @@
     "allCategories": { "tr": "Tum Kategoriler", "en": "All Categories" },
     "clearFilters": { "tr": "Filtreleri Temizle", "en": "Clear Filters" },
     "resultCount": { "tr": "urun bulundu", "en": "products found" },
+    "layout": "yan",
     "search": false,
     "sort": false,
     "urlState": false,
@@ -43,5 +44,10 @@
       { "min": 250, "max": 500, "label": { "tr": "250 - 500 TL", "en": "250 - 500 TL" } },
       { "min": 500, "max": null, "label": { "tr": "500 TL ve uzeri", "en": "500 TL and above" } }
     ]
+  },
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
   }
 }

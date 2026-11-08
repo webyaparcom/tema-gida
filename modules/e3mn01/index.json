@@ -2,7 +2,7 @@
   "name": "Menü E-Ticaret",
   "desing": {
     "logo": "logo.png",
-    "color": "#1e3046",
+    "color": "#ffffff",
     "colorhover": "#123763",
     "height": "50px",
     "urlsepet": "sepet",
@@ -148,5 +148,10 @@
       "url": "#"
     }
   ],
-  "version": "1.1.0"
+  "version": "1.1.0",
+  "veri": {
+    "statik": true,
+    "dinamik": true,
+    "kaynak": "desing/data | MxStore (/api/*)"
+  }
 }

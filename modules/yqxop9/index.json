@@ -1,0 +1,77 @@
+{
+  "name": "Ürün Etiket Kartı (Gıda · TGK)",
+  "description": "Gıda ürün etiketi bilgi kartı (Türk Gıda Kodeksi): ürün adı, net miktar, içindekiler (alerjenler kalın vurgulanır), alerjen uyarısı, besin değerleri tablosu (100 g), son tüketim tarihi, saklama koşulu, üretici ve işletme kayıt/onay no. Ürün detay sayfasına gömülür; yazdırma uyumludur; çoğul biçimler Intl.PluralRules ile (Arapça 6 form). Sağlık/tedavi beyanı içermez.",
+  "version": "1.0.0",
+  "icon": "fact_check",
+  "category": "e-commerce",
+  "desing": {
+    "max": "960px",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "textcolor": "var(--mx-site-text, #1b1b1b)",
+    "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+    "surface": "var(--mx-site-surface, #f6f6f4)",
+    "surface2": "var(--mx-site-surface-2, #ececea)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+    "showPrint": true,
+    "title": { "tr": "Ürün Etiket Bilgileri", "en": "Product Label Information", "ar": "بيانات بطاقة المنتج" },
+    "netLabel": { "tr": "Net miktar", "en": "Net quantity", "ar": "الكمية الصافية" },
+    "ingredientsLabel": { "tr": "İçindekiler", "en": "Ingredients", "ar": "المكوّنات" },
+    "allergenCount": {
+      "tr": { "one": "Alerjen uyarısı: {n} alerjen içerir", "other": "Alerjen uyarısı: {n} alerjen içerir" },
+      "en": { "one": "Allergen warning: contains {n} allergen", "other": "Allergen warning: contains {n} allergens" },
+      "ar": { "zero": "لا يحتوي على مسبّبات حساسية", "one": "تنبيه حساسية: يحتوي على مسبّب حساسية واحد", "two": "تنبيه حساسية: يحتوي على مسبّبَي حساسية", "few": "تنبيه حساسية: يحتوي على {n} مسبّبات حساسية", "many": "تنبيه حساسية: يحتوي على {n} مسبّب حساسية", "other": "تنبيه حساسية: يحتوي على {n} مسبّب حساسية" }
+    },
+    "noAllergen": { "tr": "Bilinen alerjen içermez", "en": "Contains no known allergens", "ar": "لا يحتوي على مسبّبات حساسية معروفة" },
+    "nutritionTitle": { "tr": "Besin değerleri", "en": "Nutrition facts", "ar": "القيم الغذائية" },
+    "nutrientCol": { "tr": "Besin öğesi", "en": "Nutrient", "ar": "العنصر الغذائي" },
+    "per100Col": { "tr": "100 g'da", "en": "Per 100 g", "ar": "لكل 100 غ" },
+    "servings": {
+      "tr": { "one": "Pakette yaklaşık {n} porsiyon", "other": "Pakette yaklaşık {n} porsiyon" },
+      "en": { "one": "About {n} serving per pack", "other": "About {n} servings per pack" },
+      "ar": { "one": "حوالي حصة واحدة في العبوة", "two": "حوالي حصتين في العبوة", "few": "حوالي {n} حصص في العبوة", "many": "حوالي {n} حصة في العبوة", "other": "حوالي {n} حصة في العبوة" }
+    },
+    "expiryLabel": { "tr": "Son tüketim tarihi", "en": "Best before / use by", "ar": "تاريخ انتهاء الصلاحية" },
+    "storageLabel": { "tr": "Saklama koşulu", "en": "Storage conditions", "ar": "شروط التخزين" },
+    "producerLabel": { "tr": "Üretici", "en": "Producer", "ar": "المنتِج" },
+    "regLabel": { "tr": "İşletme kayıt / onay no", "en": "Establishment registration / approval no.", "ar": "رقم تسجيل / اعتماد المنشأة" },
+    "printLabel": { "tr": "Etiketi yazdır", "en": "Print label", "ar": "اطبع البطاقة" },
+    "tableCaption": { "tr": "Ürünün 100 gramındaki ortalama besin değerleri", "en": "Average nutritional values per 100 grams of the product", "ar": "متوسط القيم الغذائية في كل 100 غرام من المنتج" }
+  },
+  "data": {
+    "name": { "tr": "Antep Fıstıklı Lokum", "en": "Pistachio Turkish Delight", "ar": "راحة الحلقوم بالفستق الحلبي" },
+    "netAmount": "250 g",
+    "servings": 10,
+    "ingredients": {
+      "tr": "Şeker, glikoz şurubu, nişasta, antep fıstığı (%12), gül suyu, sitrik asit.",
+      "en": "Sugar, glucose syrup, starch, pistachio (12%), rose water, citric acid.",
+      "ar": "سكر، شراب الجلوكوز، نشا، فستق (12%)، ماء الورد، حمض الستريك."
+    },
+    "allergens": [
+      { "tr": "antep fıstığı", "en": "pistachio", "ar": "فستق" }
+    ],
+    "nutrition": [
+      { "k": { "tr": "Enerji", "en": "Energy", "ar": "الطاقة" }, "per100": 1450, "unit": "kJ" },
+      { "k": { "tr": "Enerji", "en": "Energy", "ar": "الطاقة" }, "per100": 346, "unit": "kcal" },
+      { "k": { "tr": "Yağ", "en": "Fat", "ar": "الدهون" }, "per100": 4.8, "unit": "g" },
+      { "k": { "tr": "doymuş yağ", "en": "of which saturates", "ar": "منها دهون مشبعة" }, "per100": 0.6, "unit": "g", "sub": true },
+      { "k": { "tr": "Karbonhidrat", "en": "Carbohydrate", "ar": "الكربوهيدرات" }, "per100": 72, "unit": "g" },
+      { "k": { "tr": "şekerler", "en": "of which sugars", "ar": "منها سكريات" }, "per100": 58, "unit": "g", "sub": true },
+      { "k": { "tr": "Lif", "en": "Fibre", "ar": "الألياف" }, "per100": 1.2, "unit": "g" },
+      { "k": { "tr": "Protein", "en": "Protein", "ar": "البروتين" }, "per100": 2.4, "unit": "g" },
+      { "k": { "tr": "Tuz", "en": "Salt", "ar": "الملح" }, "per100": 0.02, "unit": "g" }
+    ],
+    "expiry": "2027-06-30",
+    "storage": { "tr": "Serin ve kuru yerde, doğrudan güneş ışığından uzakta saklayınız.", "en": "Store in a cool, dry place away from direct sunlight.", "ar": "يُحفظ في مكان بارد وجاف بعيدًا عن أشعة الشمس المباشرة." },
+    "producer": { "tr": "Örnek Gıda Üretim Ltd. Şti. — Gaziantep", "en": "Example Food Production Ltd. — Gaziantep", "ar": "شركة المثال لإنتاج الأغذية المحدودة — غازي عنتاب" },
+    "registrationNo": "TR-27-DEMO-0001",
+    "note": { "tr": "Bu etiket demo amaçlı kurgusal bir ürüne aittir; bilgiler örnektir.", "en": "This label belongs to a fictional demo product; the details are samples.", "ar": "تخصّ هذه البطاقة منتجًا وهميًا لأغراض العرض، والبيانات الواردة أمثلة فقط." }
+  },
+  "tags": ["gıda", "etiket", "TGK", "alerjen", "food", "label", "rtl"],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
+}

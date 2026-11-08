@@ -118,6 +118,15 @@
   }
 
 
+  /* Opt-in yerlesim desing.layout:"ust" — tam genislik, masaustunde yatay bolumler; mobil accordion ayni kalir */
+  .modulex[data-kf-layout="ust"] { width: 100%; min-width: 0; position: static; }
+  @media screen and (min-width: 769px) {
+    .modulex[data-kf-layout="ust"] .modulexFilterPanel { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: flex-start; }
+    .modulex[data-kf-layout="ust"] .modulexResultCount,
+    .modulex[data-kf-layout="ust"] .modulexClearFilters { flex: 1 1 100%; width: auto; margin-top: 0; }
+    .modulex[data-kf-layout="ust"] .modulexFilterSection { flex: 1 1 220px; border-bottom: 0; min-width: 0; }
+  }
+
   /* ---- Opt-in arama + siralama (desing.search / desing.sort) — yalniz yeni siniflar, mantiksal CSS ---- */
   .modulexKfVh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   .modulexKfSearch {

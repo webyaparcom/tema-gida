@@ -68,5 +68,10 @@
     "registrationNo": "TR-27-DEMO-0001",
     "note": { "tr": "Bu etiket demo amaçlı kurgusal bir ürüne aittir; bilgiler örnektir.", "en": "This label belongs to a fictional demo product; the details are samples.", "ar": "تخصّ هذه البطاقة منتجًا وهميًا لأغراض العرض، والبيانات الواردة أمثلة فقط." }
   },
-  "tags": ["gıda", "etiket", "TGK", "alerjen", "food", "label", "rtl"]
+  "tags": ["gıda", "etiket", "TGK", "alerjen", "food", "label", "rtl"],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }

@@ -65,6 +65,7 @@
       "tr": "Mesajınız...",
       "en": "Your message..."
     },
+    "formAction": "",
     "submitText": {
       "tr": "Mesaj Gönder",
       "en": "Send Message"
@@ -73,5 +74,10 @@
   "category": "contact",
   "description": "Modern iletişim formu modülü. Gradient ikon kartları, profesyonel form tasarımı ve hover efektleri.",
   "version": "1.0.0",
-  "icon": "contact_mail"
+  "icon": "contact_mail",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }

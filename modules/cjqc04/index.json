@@ -6,6 +6,7 @@
     "cardbg": "#ffffff",
     "bordercolor": "#e2e8f0",
     "color": "#1e293b",
+    "accentcolor": "#DE6D26",
     "pricecolor": "#DE6D26",
     "oldpricecolor": "#94a3b8",
     "badgecolor": "#ffffff",
@@ -53,5 +54,10 @@
   "category": "e-commerce",
   "description": "Yatay liste görünümlü ürün vitrini (vitrin-1'in grid alternatifi). Canlı products.json kataloğunu okur, fiyatı detay dosyasından zenginleştirir; açıklama satırı, rozetler ve sepet-widget uyumlu data-mx-* sepete ekle butonu içerir. showCount ile listelenen ürün sayısı sınırlanır.",
   "version": "1.0.0",
-  "icon": "view_list"
+  "icon": "view_list",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }

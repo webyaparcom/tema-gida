@@ -101,7 +101,7 @@
 
   .modulex-top-bar {
     background: var(--mxe-cd9624, #cd9624);
-    color: var(--mxe-on, #fff);
+    color: var(--mxe-on, #1b1b1b); /* 8 Kas 2026: temalar --mxe-on = primary-contrast; jeton yoksa (altin #cd9624 varsayilan) koyu yazi, beyaz 2.63:1 */
     font-size: 14px;
     padding: 8px 0;
   }
@@ -113,7 +113,7 @@
   }
 
   .modulex-top-right a {
-    color: var(--mxe-on, #fff);
+    color: var(--mxe-on, #1b1b1b); /* 8 Kas 2026: temalar --mxe-on = primary-contrast; jeton yoksa (altin #cd9624 varsayilan) koyu yazi, beyaz 2.63:1 */
     text-decoration: none;
     margin-left: 16px;
     cursor: pointer;
@@ -169,16 +169,19 @@
     border-radius: 5px;
     margin: 0 20px;
     height: 44px;
+    min-width: 0;
+    box-sizing: border-box;
   }
 
   .modulex-search-icon {
     padding: 0 12px;
-    color: #d60000;
+    color: var(--mxe-on, #1b1b1b); /* 8 Kas 2026: arama kutusu zemini primary; sabit kirmizi 1.1-2.9:1 */
     font-size: 22px;
   }
 
   .modulex-search-box input {
     flex: 1;
+    min-width: 0; /* input'un varsayilan min-content genisligi dar ekranda (AR 390 px) kutuyu tasiriyordu */
     padding: 10px;
     border: none;
     outline: none;
@@ -186,8 +189,9 @@
   }
 
   .modulex-search-box button {
+    flex-shrink: 0;
     background: var(--mxe-cd9624, #cd9624);
-    color: white;
+    color: var(--mxe-on, #1b1b1b); /* 8 Kas 2026: temalar --mxe-on = primary-contrast; jeton yoksa (altin #cd9624 varsayilan) koyu yazi, beyaz 2.63:1 */
     border: none;
     padding: 0 20px;
     font-weight: bold;
@@ -202,6 +206,7 @@
 
   .modulex-user-buttons button {
     background: #fff;
+    color: #1b1b1b; /* 8 Kas 2026: zemin sabit beyaz; koyu modda miras alinan acik yazi 1:1 kaliyordu */
     border: 1px solid var(--mxe-ccc, #ccc);
     padding: 10px 14px;
     border-radius: 6px;
@@ -219,23 +224,23 @@
   .modulex-user-buttons button:hover {
     background: var(--mxe-cd9624, #cd9624);
     border: 1px solid var(--mxe-cd9624, #cd9624);
-    color: var(--mxe-on, #fff);
+    color: var(--mxe-on, #1b1b1b); /* 8 Kas 2026: temalar --mxe-on = primary-contrast; jeton yoksa (altin #cd9624 varsayilan) koyu yazi, beyaz 2.63:1 */
   }
 
   .modulex-user-buttons button:hover .material-symbols-outlined {
-    color: var(--mxe-on, #fff);
+    color: var(--mxe-on, #1b1b1b); /* 8 Kas 2026: temalar --mxe-on = primary-contrast; jeton yoksa (altin #cd9624 varsayilan) koyu yazi, beyaz 2.63:1 */
   }
 
   .modulex-icon-favori.material-symbols-outlined {
-    color: var(--mxe-cd9624, #cd9624);
+    color: color-mix(in srgb, var(--mxe-cd9624, #cd9624) 55%, #1b1b1b); /* beyaz dugme uzerinde acik palette (limon/altin) >=3:1 */
   }
 
   .modulex-icon-sepet.material-symbols-outlined {
-    color: var(--mxe-cd9624, #cd9624);
+    color: color-mix(in srgb, var(--mxe-cd9624, #cd9624) 55%, #1b1b1b); /* beyaz dugme uzerinde acik palette (limon/altin) >=3:1 */
   }
 
   .modulex-icon-giris.material-symbols-outlined {
-    color: var(--mxe-cd9624, #cd9624);
+    color: color-mix(in srgb, var(--mxe-cd9624, #cd9624) 55%, #1b1b1b); /* beyaz dugme uzerinde acik palette (limon/altin) >=3:1 */
   }
 
   .modulex-nav-bar {
@@ -395,7 +400,7 @@
 
   .modulex-view-all button {
     background: var(--mxe-cd9624, #cd9624);
-    color: white;
+    color: var(--mxe-on, #1b1b1b); /* 8 Kas 2026: temalar --mxe-on = primary-contrast; jeton yoksa (altin #cd9624 varsayilan) koyu yazi, beyaz 2.63:1 */
     border: none;
     padding: 10px 14px;
     font-weight: bold;
@@ -413,7 +418,7 @@
   }
 
   .modulex-main-menu a {
-    color: white;
+    color: var(--mxe-on, #1b1b1b); /* 8 Kas 2026: temalar --mxe-on = primary-contrast; jeton yoksa (altin #cd9624 varsayilan) koyu yazi, beyaz 2.63:1 */
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -497,6 +502,17 @@
     [class*="modulex"] * {
       animation: none !important;
       transition: none !important;
+    }
+  }
+
+  /* 8 Kas 2026: logo gorseli acik zemin icin cizilmis (koyu yazi, saydam); koyu modda koyu header uzerinde kayboluyordu.
+     Koyu modda acik plaka; bilerek acik logolar (logo-acik) haric. */
+  @media (prefers-color-scheme: dark) {
+    .modulex-logo:not([src*="acik"]) {
+      background: #ffffff;
+      padding: 4px 10px;
+      border-radius: 8px;
+      box-sizing: content-box;
     }
   }
 </style>

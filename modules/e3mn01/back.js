@@ -29,6 +29,21 @@ if (pagesettingjson) {
   }
   html = html.replace(new RegExp("{{html}}", "g"), backhtml);
 }
+/* G3 bulgusu (30 Eki 2026): "/slug" ile baslayan IC baglanti dil onekiyle cozulur ("/tr/slug/");
+   dis baglanti, "#", "//" ve zaten "/tr/..." ile baslayan yollar aynen kalir. "#kesit" ve "?sorgu" korunur. */
+function menuEt3Href(url) {
+  var u = url == null ? "" : String(url).trim();
+  if (!/^\/(?!\/)/.test(u) || /^\/(tr|en|ar|de|fr|ru|es|it|nl)(\/|$|[?#])/.test(u)) {
+    return u || "#";
+  }
+  var tail = "";
+  var cut = u.search(/[?#]/);
+  if (cut > -1) {
+    tail = u.slice(cut);
+    u = u.slice(0, cut);
+  }
+  return wxLangInternalHref(u.replace(/^\/+/, "").replace(/\/+$/, "")) + tail;
+}
 /* toplinks: desing pipe listesi "Ad|url|Ad|url" -> <a> listesi */
 function menuEt3BuildTopLinks(raw, lang) {
   var out = "";
@@ -38,7 +53,7 @@ function menuEt3BuildTopLinks(raw, lang) {
   var value = (raw != null && typeof raw === "object" && raw[lang] !== undefined) ? raw[lang] : raw;
   var parts = String(value).split("|");
   for (var ti = 0; ti + 1 < parts.length; ti += 2) {
-    out += '<a href="' + (parts[ti + 1] || "#") + '">' + parts[ti] + "</a>";
+    out += '<a href="' + menuEt3Href(parts[ti + 1]) + '">' + parts[ti] + "</a>";
   }
   return out;
 }
@@ -51,13 +66,13 @@ if (json.data && json.data.length) {
   for (var ci = 0; ci < json.data.length; ci++) {
     var cat = json.data[ci];
     var catName = (cat.name && cat.name[json.lang]) || "";
-    var catUrl = cat.url || "#";
+    var catUrl = menuEt3Href(cat.url);
     if (cat.children && cat.children.length) {
       categoryhtml += '<li class="modulex-has-submenu"><a href="' + catUrl + '">' + catName + '</a><ul class="modulex-submenu">';
       for (var si = 0; si < cat.children.length; si++) {
         var sub = cat.children[si];
         var subName = (sub.name && sub.name[json.lang]) || "";
-        categoryhtml += '<li><a href="' + (sub.url || "#") + '">' + subName + "</a></li>";
+        categoryhtml += '<li><a href="' + menuEt3Href(sub.url) + '">' + subName + "</a></li>";
       }
       categoryhtml += "</ul></li>";
     } else {
