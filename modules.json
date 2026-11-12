@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -852,6 +858,48 @@
                   "ar": "سلتي"
                 },
                 "url": "/sepetim"
+              }
+            ]
+          },
+          {
+            "id": "col_contact",
+            "title": {
+              "tr": "İletişim",
+              "en": "Contact",
+              "ar": "اتصل بنا"
+            },
+            "links": [
+              {
+                "name": {
+                  "tr": "Pzt–Cmt 09:00 – 18:00",
+                  "en": "Mon–Sat 09:00 – 18:00",
+                  "ar": "الاثنين–السبت 09:00 – 18:00"
+                },
+                "url": "/iletisim"
+              },
+              {
+                "name": {
+                  "tr": "+90 342 000 00 00",
+                  "en": "+90 342 000 00 00",
+                  "ar": "+90 342 000 00 00"
+                },
+                "url": "/iletisim"
+              },
+              {
+                "name": {
+                  "tr": "siparis@yesilkervan.example",
+                  "en": "siparis@yesilkervan.example",
+                  "ar": "siparis@yesilkervan.example"
+                },
+                "url": "/iletisim"
+              },
+              {
+                "name": {
+                  "tr": "Gıda Çarşısı No: 14, Şehitkamil, Gaziantep (kurgusal adres)",
+                  "en": "14 Food Market Street, Sehitkamil, Gaziantep (fictional address)",
+                  "ar": "شارع سوق الغذاء رقم 14، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+                },
+                "url": "/iletisim"
               }
             ]
           }
