@@ -642,7 +642,8 @@
         "vurguBg": "var(--mx-site-primary, #2563eb)",
         "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
         "bgcolor": "var(--mx-site-surface, #f6f7f9)",
-        "color": "var(--mx-site-text, #111318)"
+        "color": "var(--mx-site-text, #111318)",
+        "yaziRenk": "var(--mx-site-text, #111318)"
       },
       "version": "1.1.0",
       "icon": "sticky_note_2",
@@ -1133,7 +1134,7 @@
       "category": "footer",
       "id": "e3hz01",
       "desing": {
-        "color": "var(--mx-site-text, #1b1b1b)",
+        "color": "#1b1b1b",
         "bgcolor": "var(--mx-site-surface, #ffffff)",
         "pillhover": "#2196f3",
         "border_radius": "24px",
