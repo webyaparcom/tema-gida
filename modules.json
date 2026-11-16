@@ -36,7 +36,8 @@
           "tr": "Üye Girişi",
           "en": "Login",
           "ar": "تسجيل الدخول"
-        }
+        },
+        "hataBildir": "https://webyapar.com/api/portal/tema-hata.js"
       },
       "version": "1.0.0",
       "icon": "info",
@@ -199,13 +200,18 @@
       "index": 1
     },
     {
-      "name": "Hero 1",
-      "path": "hero-1",
+      "name": "Açılış Izgara Çizgi — teknik çizim ızgarası, kesim işaretli görsel",
+      "path": "acilis-izgara-cizgi",
       "local": "body",
       "category": "hero",
       "id": "e3hr01",
       "desing": {
         "max": "1200px",
+        "alt": {
+          "tr": "Sabah ışığında fıstık bahçesi",
+          "en": "A pistachio orchard in morning light",
+          "ar": "بستان فستق في ضوء الصباح"
+        },
         "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
         "overlay": "linear-gradient(135deg, rgba(0,0,0,.55), rgba(0,0,0,.35))",
         "title_accent": "linear-gradient(135deg, #ffffff, #ffffff)",
@@ -231,11 +237,6 @@
           "ar": "نكهات محلية"
         },
         "image": "/img/gida-hero-bahce.webp",
-        "alt": {
-          "tr": "Sabah ışığında fıstık bahçesi",
-          "en": "A pistachio orchard in morning light",
-          "ar": "بستان فستق في ضوء الصباح"
-        },
         "btn1": {
           "tr": "Ürünlerimiz",
           "en": "Our products",
@@ -249,11 +250,52 @@
         },
         "btn2_url": "uretim-sureci",
         "stats": "",
-        "stil": ""
+        "stil": "",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img": "",
+        "img2": "",
+        "video": "",
+        "poster": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "rozet_ikon": "",
+        "rozet_deger": "",
+        "rozet_metin": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "version": "1.1.0",
-      "icon": "hero",
-      "index": 2
+      "icon": "grid_4x4",
+      "index": 2,
+      "description": "Zeminde ince teknik çizim ızgarası (kenarlara doğru söner); ortalı etiket, h1, metin, düğmeler ve köşeli çipler; altta köşelerinde baskı kesim işaretleri olan görsel. Mühendislik/plan estetiği: ızgara zemin ve kesim işaretli çerçeve; yuvarlak köşe yok, çizgi dili. Başlık h1, ilk görsel eager. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "deger": "sayı/değer (ör. 1.200+, dil sözlüğü olabilir)",
+          "metin": "madde metni (dil sözlüğü)",
+          "img": "madde görseli (mozaik yerleşimlerde)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
       "name": "Kategori Vitrin (Görselli Ürün Grupları)",
@@ -422,17 +464,20 @@
       "index": 4
     },
     {
-      "name": "Zaman Çizelgesi 1",
-      "path": "timeline-1",
+      "name": "Zaman Dev Yıl — filigran yıllı tam genişlik satırlar",
+      "path": "zaman-dev-yil",
       "local": "body",
       "category": "timeline",
       "id": "e3tl01",
       "desing": {
         "max": "1200px",
-        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "bgcolor": "var(--mx-site-text, #111318)",
+        "accent": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "var(--mx-site-text, #111318)",
         "titlecolor": "var(--mx-site-text, #1b1b1b)",
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
-        "accent": "var(--mx-site-primary, #2563eb)",
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badge": {
           "tr": "Üretim",
@@ -449,12 +494,23 @@
           "en": "Our products reach you in four steps.",
           "ar": "تصل منتجاتنا إليك في أربع خطوات."
         },
-        "cardbg": "var(--mx-site-surface, #ffffff)",
-        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "accentText": "#ffffff"
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "bg": "var(--mx-site-text, #111318)",
+        "text": "var(--mx-site-bg, #ffffff)",
+        "muted": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 78%, var(--mx-site-text, #111318))",
+        "kartBg": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 7%, transparent)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 18%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 45%, var(--mx-site-bg, #ffffff))",
+        "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+        "vurguText": "var(--mx-site-text, #111318)",
+        "color": "var(--mx-site-bg, #ffffff)"
       },
       "version": "1.0.0",
-      "icon": "timeline",
+      "icon": "calendar_month",
       "data": [
         {
           "year": "01",
@@ -509,16 +565,42 @@
           }
         }
       ],
-      "index": 5
+      "index": 5,
+      "description": "Koyu zeminde her dönem tam genişlikte bir bant; yıl bandın arkasında dev, soluk bir filigran; başlık ve metin önde, bantlar dönüşümlü hizalanır. Yıl görsel zemin olur (filigran tipografi); afiş/film jeneriği havası, çizgi veya ikon yok. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "etiket": "yıl / tarih / dönem (dil sözlüğü ya da düz metin)",
+          "baslik": "dil sözlüğü (zorunlu)",
+          "metin": "dil sözlüğü",
+          "ikon": "Material Symbols adı",
+          "img": "görsel yolu (destekleyen yerleşimde)",
+          "url": "iç/dış bağlantı"
+        }
+      }
     },
     {
-      "name": "CTA Şerit 1",
-      "path": "cta-1",
+      "name": "Çağrı Not Kâğıdı — bantlı yapışkan not",
+      "path": "cagri-not-kagidi",
       "local": "body",
       "category": "cta",
       "id": "e3ca01",
       "desing": {
         "max": "1200px",
+        "btn1Text": {
+          "tr": "Teklif al",
+          "en": "Get a quote",
+          "ar": "اطلب عرضًا"
+        },
+        "btn1Url": "toptan-satis",
+        "btn2Text": {
+          "tr": "Ürünlerimiz",
+          "en": "Our products",
+          "ar": "منتجاتنا"
+        },
+        "btn2Url": "urunlerimiz",
         "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
         "btnbg": "var(--mx-site-surface, #ffffff)",
         "btncolor": "var(--mx-site-text, #1b1b1b)",
@@ -532,23 +614,50 @@
           "en": "Request a quote for cartons and corporate gift boxes.",
           "ar": "اطلب عرض سعر للكراتين وعلب الهدايا المؤسسية."
         },
-        "btn1Text": {
-          "tr": "Teklif al",
-          "en": "Get a quote",
-          "ar": "اطلب عرضًا"
-        },
-        "btn1Url": "toptan-satis",
-        "btn2Text": {
-          "tr": "Ürünlerimiz",
-          "en": "Our products",
-          "ar": "منتجاتنا"
-        },
-        "btn2Url": "urunlerimiz",
-        "stil": ""
+        "stil": "",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img": "",
+        "alt": "",
+        "ikon": "",
+        "not": "",
+        "number": "",
+        "numberText": "",
+        "waLabel": "",
+        "waTitle": "",
+        "waMessage": "",
+        "hours": "",
+        "hoursLabel": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "version": "1.1.0",
-      "icon": "campaign",
-      "index": 6
+      "icon": "sticky_note_2",
+      "index": 6,
+      "description": "Hafif eğik, üstünde yarı saydam bant şeridi olan not kâğıdı kartı; içinde başlık, metin, düğmeler. Hover'da düzelir. Samimi, el yapımı his (kâğıt + bant); kurumsal kutuların tersine sıcak ton. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık da düğme de yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "ikon": "Material Symbols adı (madde)",
+          "baslik": "dil sözlüğü (madde yazısı, zorunlu)",
+          "aciklama": "dil sözlüğü (madde alt yazısı)"
+        }
+      }
     },
     {
       "name": "E-ticaret Alt",
@@ -1057,13 +1166,13 @@
       "index": 9
     },
     {
-      "name": "İletişim",
-      "path": "contact-3",
+      "name": "İletişim Sekmeli — kanal başına sekme",
+      "path": "iletisim-sekmeli",
       "local": "body",
       "category": "contact",
       "id": "e3ct01",
       "desing": {
-        "color": "var(--mx-site-text, #1b1b1b)",
+        "color": "var(--mx-site-text, #111318)",
         "name": {
           "tr": "Bize ulaşın",
           "en": "Contact us",
@@ -1071,10 +1180,35 @@
         },
         "margin": "30px 0px 30px 0px",
         "linkcolor": "var(--mx-site-primary, #2563eb)",
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "adres": "",
+        "telefon": "",
+        "eposta": "",
+        "whatsapp": "",
+        "saat": "",
+        "haritaUrl": "",
+        "haritaGomme": "",
+        "waMesaj": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bgcolor": "var(--mx-site-bg, #ffffff)"
       },
       "version": "1.0.0",
-      "icon": "contact_mail",
+      "icon": "tab",
       "data": [
         {
           "icon": "phone",
@@ -1101,7 +1235,19 @@
           }
         }
       ],
-      "index": 10
+      "index": 10,
+      "description": "Kanallar sekme şeridi (ikon + etiket); seçilen sekmenin panelinde değer dev puntoda, eylem düğmesi ve kopyala düğmesi. JS yoksa tüm paneller alt alta. Çok kanallı işletmeler için tek seferde tek bilgi: kalabalık liste yerine odaklı panel. Kanallar desing'den (adres · telefon · WhatsApp · e-posta · saat) + data satırları; etiketler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Kanal yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing",
+        "alanlar": {
+          "ikon": "Material Symbols adı (kanal türü ikondan da anlaşılır: mail · call · location_on · schedule)",
+          "deger": "dil sözlüğü (görünen değer, zorunlu; eski `text`)",
+          "url": "bağlantı (boşsa e-posta/telefon/haritadan türetilir)",
+          "baslik": "dil sözlüğü (kanal etiketi)"
+        }
+      }
     },
     {
       "name": "Maps",
@@ -1123,12 +1269,14 @@
       "index": 11
     },
     {
-      "name": "Tanıtım Modülü",
-      "path": "module-1",
+      "name": "Tanıtım Üç Sütun — başlık · metin · maddeler yan yana",
+      "path": "tanitim-uc-sutun",
       "local": "body",
       "category": "module",
       "id": "e3in01",
       "desing": {
+        "img": "gida-uretim-1.webp",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
         "name": {
           "tr": "Yeşil Kervan",
           "en": "Yesil Kervan",
@@ -1161,8 +1309,6 @@
           "ar": "تظهر معلومات مسببات الحساسية وتاريخ الانتهاء في صفحة كل منتج."
         },
         "icon3": "fact_check",
-        "img": "gida-uretim-1.webp",
-        "bgcolor": "var(--mx-site-surface, #ffffff)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
         "marginbotton": "20",
@@ -1171,11 +1317,45 @@
           "en": "About us",
           "ar": "من نحن"
         },
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img2": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "version": "1.1.0",
-      "icon": "business",
-      "index": 12
+      "icon": "view_column",
+      "index": 12,
+      "description": "Geniş ekranda üç eşit olmayan sütun: solda etiket + büyük başlık, ortada metin + CTA, sağda maddeler; sütunlar dikey çizgiyle ayrılır. Yatay okuma: tanıtımın üç parçası tek satırda yan yana (kısa, yoğun bir bant); görsel yok. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık ve metin yoksa blok basılmaz.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
       "name": "Siparişlerim (Pro)",
@@ -5944,9 +6124,11 @@
       "index": 34
     },
     {
-      "name": "Tanıtım Modülü",
+      "name": "Tanıtım Üç Sütun — başlık · metin · maddeler yan yana",
       "local": "body",
       "desing": {
+        "img": "gida-uretim-2.webp",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
         "name": {
           "tr": "Bahçeden paketlemeye",
           "en": "From the orchard to the pack",
@@ -5979,8 +6161,6 @@
           "ar": "يُطبع رقم الدفعة على البطاقة فيكون المنتج قابلًا للتتبع."
         },
         "icon3": "qr_code_2",
-        "img": "gida-uretim-2.webp",
-        "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
         "marginbotton": "20",
@@ -5989,25 +6169,61 @@
           "en": "Our production process",
           "ar": "مراحل إنتاجنا"
         },
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img2": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
       "version": "1.1.0",
-      "icon": "business",
+      "icon": "view_column",
       "id": "8gply0",
-      "path": "module-1",
+      "path": "tanitim-uc-sutun",
       "data": [],
-      "index": 35
+      "index": 35,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
-      "name": "Zaman Çizelgesi 1",
+      "name": "Zaman Dev Yıl — filigran yıllı tam genişlik satırlar",
       "desing": {
         "max": "1200px",
-        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "bgcolor": "var(--mx-site-text, #111318)",
+        "accent": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "var(--mx-site-text, #111318)",
         "titlecolor": "var(--mx-site-text, #1b1b1b)",
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
-        "accent": "var(--mx-site-primary, #2563eb)",
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badge": {
           "tr": "Adım adım",
@@ -6024,9 +6240,20 @@
           "en": "The path we follow from the orchard to your door.",
           "ar": "الطريق الذي نتبعه من البستان إلى بابك."
         },
-        "cardbg": "var(--mx-site-surface, #ffffff)",
-        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "accentText": "#ffffff"
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "bg": "var(--mx-site-text, #111318)",
+        "text": "var(--mx-site-bg, #ffffff)",
+        "muted": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 78%, var(--mx-site-text, #111318))",
+        "kartBg": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 7%, transparent)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 18%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 45%, var(--mx-site-bg, #ffffff))",
+        "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+        "vurguText": "var(--mx-site-text, #111318)",
+        "color": "var(--mx-site-bg, #ffffff)"
       },
       "data": [
         {
@@ -6109,19 +6336,36 @@
         }
       ],
       "category": "timeline",
-      "description": "Zaman çizelgesi modülü. Kurumsal tarihçe, süreç adımları veya yol haritasını dikey çizgi + yıl rozetiyle listeler. Çok dilli başlık/metin ve animasyonlu giriş içerir.",
+      "description": "Koyu zeminde her dönem tam genişlikte bir bant; yıl bandın arkasında dev, soluk bir filigran; başlık ve metin önde, bantlar dönüşümlü hizalanır. Yıl görsel zemin olur (filigran tipografi); afiş/film jeneriği havası, çizgi veya ikon yok. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
       "version": "1.0.0",
-      "icon": "timeline",
+      "icon": "calendar_month",
       "id": "0qg3so",
-      "path": "timeline-1",
+      "path": "zaman-dev-yil",
       "local": "body",
-      "index": 36
+      "index": 36,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "etiket": "yıl / tarih / dönem (dil sözlüğü ya da düz metin)",
+          "baslik": "dil sözlüğü (zorunlu)",
+          "metin": "dil sözlüğü",
+          "ikon": "Material Symbols adı",
+          "img": "görsel yolu (destekleyen yerleşimde)",
+          "url": "iç/dış bağlantı"
+        }
+      }
     },
     {
-      "name": "Galeri Masonry (Filtre + Lightbox)",
-      "description": "Masonry (sütun) ya da sabit oranlı ızgara galeri: kategori çipleriyle filtre (?cat= URL durumu, aria-pressed), lightbox (klavye, filtrelenmişte yalnız görünenler gezilir), lazy yükleme (width/height ile CLS yok), görselsiz öğede nötr yer tutucu. gap:0 ile kenarsız ızgara, hover başlık. Öğeler data[] içinde {img, thumb?, title{tr,en,ar}, cat, w, h, alt{tr,en,ar}}; kategoriler desing.cats[]. Üç dil + RTL.",
+      "name": {
+        "tr": "Galeri — Hizalı Satırlar",
+        "en": "Gallery — Justified Rows",
+        "ar": "معرض — صفوف مضبوطة"
+      },
+      "description": "Hizalı (justified) satır galerisi: her satır aynı yükseklikte, görseller kendi en-boy oranlarıyla satırı tam doldurur (flex-grow = w/h). Tıklayınca yerel <dialog> lightbox: önceki/sonraki, sayaç, başlık, Esc ve ok tuşları, kapanınca odak geri döner. Görselsiz öğe nötr yer tutucu. Veri galeri-masonry ile aynı: data[] = [{img, thumb?, title{}, alt{}, w, h}].",
       "version": "1.0.0",
-      "icon": "photo_library",
+      "icon": "view_comfy",
       "category": "galeri",
       "tags": [
         "galeri",
@@ -6144,17 +6388,6 @@
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "gap": "12px",
         "radius": "8px",
-        "columns": {
-          "d": 4,
-          "t": 3,
-          "m": 2
-        },
-        "ratio": "auto",
-        "captions": "hover",
-        "filter": true,
-        "lightbox": true,
-        "lazy": true,
-        "urlPrefix": "",
         "title": {
           "tr": "Bahçeden sofraya kareler",
           "en": "From the orchard to the table",
@@ -6165,98 +6398,44 @@
           "en": "Images from the orchard, the workshop and the table (AI-generated, representative).",
           "ar": "صور من البستان والورشة والمائدة (مُنشأة بالذكاء الاصطناعي، تمثيلية)."
         },
-        "allLabel": {
-          "tr": "Tümü",
-          "en": "All",
-          "ar": "الكل"
-        },
-        "filterLabel": {
-          "tr": "Kategoriye göre filtrele",
-          "en": "Filter by category",
-          "ar": "التصفية حسب الفئة"
-        },
-        "countText": {
-          "zero": {
-            "ar": "لا توجد صور"
-          },
-          "one": {
-            "tr": "{n} fotoğraf",
-            "en": "{n} photo",
-            "ar": "صورة واحدة"
-          },
-          "two": {
-            "ar": "صورتان"
-          },
-          "few": {
-            "ar": "{n} صور"
-          },
-          "many": {
-            "ar": "{n} صورة"
-          },
-          "other": {
-            "tr": "{n} fotoğraf",
-            "en": "{n} photos",
-            "ar": "{n} صورة"
-          }
-        },
         "emptyText": {
           "tr": "Henüz gösterilecek görsel yok.",
           "en": "There are no images to show yet.",
           "ar": "لا توجد صور لعرضها بعد."
         },
-        "lightboxLabels": {
-          "dialog": {
-            "tr": "Görsel görüntüleyici",
-            "en": "Image viewer",
-            "ar": "عارض الصور"
-          },
-          "close": {
-            "tr": "Kapat",
-            "en": "Close",
-            "ar": "إغلاق"
-          },
-          "prev": {
-            "tr": "Önceki görsel",
-            "en": "Previous image",
-            "ar": "الصورة السابقة"
-          },
-          "next": {
-            "tr": "Sonraki görsel",
-            "en": "Next image",
-            "ar": "الصورة التالية"
-          },
-          "counter": {
-            "tr": "{i} / {n}",
-            "en": "{i} / {n}",
-            "ar": "{i} من {n}"
-          }
+        "rowHeight": "240px",
+        "onimage": "#ffffff",
+        "scrim": "rgba(0, 0, 0, 0.88)",
+        "dialogLabel": {
+          "tr": "Görsel görüntüleyici",
+          "en": "Image viewer",
+          "ar": "عارض الصور"
         },
-        "cats": [
-          {
-            "id": "bahce",
-            "name": {
-              "tr": "Bahçe",
-              "en": "Orchard",
-              "ar": "البستان"
-            }
-          },
-          {
-            "id": "atolye",
-            "name": {
-              "tr": "Atölye",
-              "en": "Workshop",
-              "ar": "الورشة"
-            }
-          },
-          {
-            "id": "sofra",
-            "name": {
-              "tr": "Sofra",
-              "en": "Table",
-              "ar": "المائدة"
-            }
-          }
-        ]
+        "closeLabel": {
+          "tr": "Kapat",
+          "en": "Close",
+          "ar": "إغلاق"
+        },
+        "prevLabel": {
+          "tr": "Önceki görsel",
+          "en": "Previous image",
+          "ar": "الصورة السابقة"
+        },
+        "nextLabel": {
+          "tr": "Sonraki görsel",
+          "en": "Next image",
+          "ar": "الصورة التالية"
+        },
+        "openLabel": {
+          "tr": "Büyüt",
+          "en": "Enlarge",
+          "ar": "تكبير"
+        },
+        "counter": {
+          "tr": "{i} / {n}",
+          "en": "{i} / {n}",
+          "ar": "{i} من {n}"
+        }
       },
       "data": [
         {
@@ -6357,14 +6536,21 @@
         }
       ],
       "id": "5mbdsk",
-      "path": "galeri-masonry",
+      "path": "galeri-masonry-2",
       "local": "body",
-      "index": 37
+      "index": 37,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing + data[]"
+      }
     },
     {
-      "name": "Tanıtım Modülü",
+      "name": "Tanıtım Üç Sütun — başlık · metin · maddeler yan yana",
       "local": "body",
       "desing": {
+        "img": "gida-uretim-1.webp",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
         "name": {
           "tr": "Belgelerimiz ve etiket bilgisi",
           "en": "Our documents and label information",
@@ -6397,8 +6583,6 @@
           "ar": "تُكتب مسببات الحساسية مثل الفستق والحليب والغلوتين بخط عريض في قائمة المكونات."
         },
         "icon3": "warning",
-        "img": "gida-uretim-1.webp",
-        "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
         "marginbotton": "20",
@@ -6407,27 +6591,62 @@
           "en": "Our documents",
           "ar": "وثائقنا"
         },
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img2": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
       "version": "1.1.0",
-      "icon": "business",
+      "icon": "view_column",
       "id": "9niajv",
-      "path": "module-1",
+      "path": "tanitim-uc-sutun",
       "data": [],
-      "index": 38
+      "index": 38,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
-      "name": "SSS Akordeon 1",
+      "name": "SSS Zigzag — dönüşümlü yanlarda soru ve cevap",
       "desing": {
         "max": "900px",
         "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "cardbg": "var(--mx-site-surface, #ffffff)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "titlecolor": "var(--mx-site-text, #1b1b1b)",
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
-        "accent": "var(--mx-site-primary, #2563eb)",
         "badge": {
           "tr": "Etiket",
           "en": "Label",
@@ -6443,8 +6662,24 @@
           "en": "Common questions about label information.",
           "ar": "أسئلة شائعة حول بيانات البطاقة."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-        "accentText": "var(--mx-site-primary-contrast, #ffffff)"
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "tekAcik": "",
+        "ilkAcik": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 68%, var(--mx-site-bg, #ffffff))",
+        "kartBg": "var(--mx-site-surface, #f6f7f9)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "data": [
         {
@@ -6497,18 +6732,32 @@
         }
       ],
       "category": "faq",
-      "description": "SSS akordeon modülü. Soru-cevap listesini tek seferde bir açık olacak şekilde akordeon düzende gösterir. Çok dilli veri, animasyonlu açılış, mobil uyum ve erişilebilirlik (aria-expanded) desteği içerir.",
+      "description": "Her soru-cevap çifti iki yarımlı bir satır: soru büyük numarasıyla bir yanda, cevap kutusu öbür yanda; satırlar dönüşümlü yer değiştirir. Hepsi açık, ritmik zigzag okuma (sol-sağ salınım); az sayıda (3–6) önemli soru için sahne düzeni. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Açılırlar yerel <details> (JS'siz). Veri yoksa blok basılmaz.",
       "version": "1.0.0",
-      "icon": "quiz",
+      "icon": "swap_horiz",
       "id": "c4nbvi",
-      "path": "faq-1",
+      "path": "sss-zigzag",
       "local": "body",
-      "index": 39
+      "index": 39,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "data",
+        "alanlar": {
+          "soru": "dil sözlüğü (zorunlu; eski `question`)",
+          "cevap": "dil sözlüğü (eski `answer`)",
+          "kategori": "grup adı, dil sözlüğü (gruplayan yerleşimde)",
+          "ikon": "Material Symbols adı (destekleyen yerleşimde)",
+          "url": "«Devamı» bağlantısı (iç slug ya da tam URL)"
+        }
+      }
     },
     {
-      "name": "Tanıtım Modülü",
+      "name": "Tanıtım Üç Sütun — başlık · metin · maddeler yan yana",
       "local": "body",
       "desing": {
+        "img": "gida-tarif-1.webp",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
         "name": {
           "tr": "Ballı fıstık kaplı irmik dilimleri",
           "en": "Honeyed pistachio-crusted semolina slices",
@@ -6541,8 +6790,6 @@
           "ar": "سخّن الحليب مع السكر وأضف السميد وحرّك حتى يثخن. اسكبه في قالب واتركه يبرد ثم قطّعه؛ غطّه بالفستق المطحون وصبّ العسل فوقه."
         },
         "icon3": "skillet",
-        "img": "gida-tarif-1.webp",
-        "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
         "marginbotton": "20",
@@ -6551,21 +6798,56 @@
           "en": "Recipe",
           "ar": "وصفة"
         },
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img2": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
       "version": "1.1.0",
-      "icon": "business",
+      "icon": "view_column",
       "id": "uuzz8e",
-      "path": "module-1",
+      "path": "tanitim-uc-sutun",
       "data": [],
-      "index": 40
+      "index": 40,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
-      "name": "Tanıtım Modülü",
+      "name": "Tanıtım Üç Sütun — başlık · metin · maddeler yan yana",
       "local": "body",
       "desing": {
+        "img": "gida-tarif-2.webp",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
         "name": {
           "tr": "Bal, zeytin ve reçelli kahvaltı sofrası",
           "en": "Breakfast table with honey, olives and jam",
@@ -6598,8 +6880,6 @@
           "ar": "قطّع الخبز وضع العسل والمربى وزيت الزيتون في أوعية صغيرة. قدّم الفستق في طبق منفصل."
         },
         "icon3": "skillet",
-        "img": "gida-tarif-2.webp",
-        "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
         "marginbotton": "20",
@@ -6608,21 +6888,56 @@
           "en": "Recipe",
           "ar": "وصفة"
         },
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img2": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
       "version": "1.1.0",
-      "icon": "business",
+      "icon": "view_column",
       "id": "udbgkl",
-      "path": "module-1",
+      "path": "tanitim-uc-sutun",
       "data": [],
-      "index": 41
+      "index": 41,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
-      "name": "Tanıtım Modülü",
+      "name": "Tanıtım Üç Sütun — başlık · metin · maddeler yan yana",
       "local": "body",
       "desing": {
+        "img": "gida-urun-fistik-3.webp",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
         "name": {
           "tr": "Fıstık ezmeli ekmek dilimi",
           "en": "Pistachio paste on toast",
@@ -6655,8 +6970,6 @@
           "ar": "حمّص الخبز وادهنه بالمعجون ثم صبّ العسل فوقه وقدّمه مع فستق مكسّر خشنًا."
         },
         "icon3": "skillet",
-        "img": "gida-urun-fistik-3.webp",
-        "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
         "marginbotton": "20",
@@ -6665,21 +6978,56 @@
           "en": "Recipe",
           "ar": "وصفة"
         },
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img2": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
       "version": "1.1.0",
-      "icon": "business",
+      "icon": "view_column",
       "id": "0efw7b",
-      "path": "module-1",
+      "path": "tanitim-uc-sutun",
       "data": [],
-      "index": 42
+      "index": 42,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
-      "name": "Tanıtım Modülü",
+      "name": "Tanıtım Üç Sütun — başlık · metin · maddeler yan yana",
       "local": "body",
       "desing": {
+        "img": "gida-hasat.webp",
+        "bgcolor": "var(--mx-site-surface, #f6f7f9)",
         "name": {
           "tr": "Koli ve kurumsal hediye paketleri",
           "en": "Cartons and corporate gift boxes",
@@ -6712,8 +7060,6 @@
           "ar": "خيار بطاقة مطبوع عليها الشعار في علب الهدايا المؤسسية."
         },
         "icon3": "sell",
-        "img": "gida-hasat.webp",
-        "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
         "marginbotton": "20",
@@ -6722,16 +7068,49 @@
           "en": "Wholesale",
           "ar": "البيع بالجملة"
         },
-        "stil": ""
+        "stil": "",
+        "max": "1200px",
+        "bosluk": "clamp(56px, 8vw, 104px)",
+        "yuvarlak": "18px",
+        "ust": "",
+        "baslik": "",
+        "metin": "",
+        "img2": "",
+        "cta_ad": "",
+        "cta_url": "",
+        "cta2_ad": "",
+        "cta2_url": "",
+        "bg": "var(--mx-site-surface, #f6f7f9)",
+        "text": "var(--mx-site-text, #111318)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 70%, var(--mx-site-surface, #f6f7f9))",
+        "kartBg": "var(--mx-site-bg, #ffffff)",
+        "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 12%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "vurguBg": "var(--mx-site-primary, #2563eb)",
+        "vurguText": "var(--mx-site-primary-contrast, #ffffff)",
+        "color": "var(--mx-site-text, #111318)"
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
       "version": "1.1.0",
-      "icon": "business",
+      "icon": "view_column",
       "id": "46jzqe",
-      "path": "module-1",
+      "path": "tanitim-uc-sutun",
       "data": [],
-      "index": 43
+      "index": 43,
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data",
+        "alanlar": {
+          "ikon": "madde ikonu (Material Symbols)",
+          "baslik": "madde başlığı (dil sözlüğü, zorunlu)",
+          "metin": "madde metni (dil sözlüğü)",
+          "url": "madde bağlantısı"
+        }
+      }
     },
     {
       "name": "Contact 6",
