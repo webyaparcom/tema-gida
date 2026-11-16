@@ -7,7 +7,7 @@
 
 <style>
   /* cagri-not-kagidi — Samimi, el yapımı his (kâğıt + bant); kurumsal kutuların tersine sıcak ton. */
-  .modulex-cagri-not-kagidi { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-cagri-not-kagidi { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --yaziRenk--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
   .modulex-cagri-not-kagidi *, .modulex-cagri-not-kagidi *::before, .modulex-cagri-not-kagidi *::after { box-sizing: border-box; }
   /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
   .modulex-cagri-not-kagidi :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
@@ -30,11 +30,11 @@
   .modulex-cagri-not-kagidi-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
   .modulex-cagri-not-kagidi-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
   .modulex-cagri-not-kagidi-dugme:hover { transform: translateY(-2px); }
-  .modulex-cagri-not-kagidi-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-cagri-not-kagidi-dugme--ikincil { background: transparent; color: --yaziRenk--; border-color: --cizgi--; }
   .modulex-cagri-not-kagidi-dugme--ikincil:hover { border-color: --accent--; }
   .modulex-cagri-not-kagidi-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-cagri-not-kagidi-not-kart { position: relative; display: grid; gap: 14px; padding: clamp(36px, 5vw, 56px) clamp(24px, 4vw, 48px); border-radius: 6px; background: --kartBg--; box-shadow: 0 2px 0 --cizgi--, 0 28px 40px -28px color-mix(in srgb, --text-- 50%, transparent); transform: rotate(-1.6deg); transition: transform 0.4s ease; }
+  .modulex-cagri-not-kagidi-not-kart { position: relative; display: grid; gap: 14px; padding: clamp(36px, 5vw, 56px) clamp(24px, 4vw, 48px); border-radius: 6px; background: --kartBg--; box-shadow: 0 2px 0 --cizgi--, 0 28px 40px -28px color-mix(in srgb, --yaziRenk-- 50%, transparent); transform: rotate(-1.6deg); transition: transform 0.4s ease; }
   .modulex-cagri-not-kagidi-not-kart:hover { transform: rotate(0deg) translateY(-4px); }
   .modulex-cagri-not-kagidi-bant { position: absolute; inset-block-start: -14px; inset-inline-start: 50%; width: 120px; height: 28px; margin-inline-start: -60px; background: color-mix(in srgb, --accent-- 35%, transparent); transform: rotate(3deg); }
   .modulex-cagri-not-kagidi-ikon { color: --accentInk--; font-size: 32px; }
