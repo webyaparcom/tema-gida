@@ -1,277 +1,180 @@
 {
-  "name": "Galeri Masonry (Filtre + Lightbox)",
-  "description": "Masonry (sütun) ya da sabit oranlı ızgara galeri: kategori çipleriyle filtre (?cat= URL durumu, aria-pressed), lightbox (klavye, filtrelenmişte yalnız görünenler gezilir), lazy yükleme (width/height ile CLS yok), görselsiz öğede nötr yer tutucu. gap:0 ile kenarsız ızgara, hover başlık. Öğeler data[] içinde {img, thumb?, title{tr,en,ar}, cat, w, h, alt{tr,en,ar}}; kategoriler desing.cats[]. Üç dil + RTL.",
-  "version": "1.0.0",
-  "icon": "photo_library",
+  "name": {
+    "tr": "Galeri — Hizalı Satırlar",
+    "en": "Gallery — Justified Rows",
+    "ar": "معرض — صفوف مضبوطة"
+  },
+  "description": "Hizalı (justified) satır galerisi: her satır aynı yükseklikte, görseller kendi en-boy oranlarıyla satırı tam doldurur (flex-grow = w/h). Tıklayınca yerel <dialog> lightbox: önceki/sonraki, sayaç, başlık, Esc ve ok tuşları, kapanınca odak geri döner. Görselsiz öğe nötr yer tutucu. Veri galeri-masonry ile aynı: data[] = [{img, thumb?, title{}, alt{}, w, h}].",
+  "path": "galeri-masonry-2",
+  "local": "body",
   "category": "galeri",
+  "subCategory": "hizali-satir",
+  "version": "1.0.0",
+  "update": "2026-11-01",
+  "icon": "view_comfy",
   "tags": [
     "galeri",
-    "masonry",
-    "filtre",
+    "justified",
     "lightbox",
-    "portfolyo",
     "gallery",
     "ar"
   ],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing + data[]"
+  },
   "desing": {
     "max": "1280px",
     "bgcolor": "var(--mx-site-bg, #ffffff)",
     "textcolor": "var(--mx-site-text, #1b1b1b)",
-    "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+    "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
     "surface": "var(--mx-site-surface, #f6f6f4)",
     "surface2": "var(--mx-site-surface-2, #ececea)",
     "accent": "var(--mx-site-primary, #2563eb)",
     "accentText": "var(--mx-site-primary-contrast, #ffffff)",
-    "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
-    "gap": "12px",
-    "radius": "8px",
-    "columns": {
-      "d": 4,
-      "t": 3,
-      "m": 2
-    },
-    "ratio": "auto",
-    "captions": "hover",
-    "filter": true,
-    "lightbox": true,
-    "lazy": true,
-    "urlPrefix": "",
+    "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+    "radius": "6px",
+    "rowHeight": "240px",
+    "gap": "8px",
+    "onimage": "#ffffff",
+    "scrim": "rgba(0, 0, 0, 0.88)",
     "title": {
       "tr": "Galeri",
       "en": "Gallery",
       "ar": "المعرض"
     },
     "description": {
-      "tr": "Çalışmalarımızdan seçilmiş kareler. Kategoriye göre süzün, büyütmek için dokunun.",
-      "en": "A selection of frames from our work. Filter by category and tap to enlarge.",
-      "ar": "مختارات من أعمالنا. صفِّ حسب الفئة، وانقر على الصورة لتكبيرها."
-    },
-    "allLabel": {
-      "tr": "Tümü",
-      "en": "All",
-      "ar": "الكل"
-    },
-    "filterLabel": {
-      "tr": "Kategoriye göre filtrele",
-      "en": "Filter by category",
-      "ar": "التصفية حسب الفئة"
-    },
-    "countText": {
-      "zero": {
-        "ar": "لا توجد صور"
-      },
-      "one": {
-        "tr": "{n} fotoğraf",
-        "en": "{n} photo",
-        "ar": "صورة واحدة"
-      },
-      "two": {
-        "ar": "صورتان"
-      },
-      "few": {
-        "ar": "{n} صور"
-      },
-      "many": {
-        "ar": "{n} صورة"
-      },
-      "other": {
-        "tr": "{n} fotoğraf",
-        "en": "{n} photos",
-        "ar": "{n} صورة"
-      }
+      "tr": "Kısa açıklama",
+      "en": "Short description",
+      "ar": "وصف قصير"
     },
     "emptyText": {
       "tr": "Henüz gösterilecek görsel yok.",
       "en": "There are no images to show yet.",
       "ar": "لا توجد صور لعرضها بعد."
     },
-    "lightboxLabels": {
-      "dialog": {
-        "tr": "Görsel görüntüleyici",
-        "en": "Image viewer",
-        "ar": "عارض الصور"
-      },
-      "close": {
-        "tr": "Kapat",
-        "en": "Close",
-        "ar": "إغلاق"
-      },
-      "prev": {
-        "tr": "Önceki görsel",
-        "en": "Previous image",
-        "ar": "الصورة السابقة"
-      },
-      "next": {
-        "tr": "Sonraki görsel",
-        "en": "Next image",
-        "ar": "الصورة التالية"
-      },
-      "counter": {
-        "tr": "{i} / {n}",
-        "en": "{i} / {n}",
-        "ar": "{i} من {n}"
-      }
+    "dialogLabel": {
+      "tr": "Görsel görüntüleyici",
+      "en": "Image viewer",
+      "ar": "عارض الصور"
     },
-    "cats": [
-      {
-        "id": "mekan",
-        "name": {
-          "tr": "Mekan",
-          "en": "Spaces",
-          "ar": "المساحات"
-        }
-      },
-      {
-        "id": "detay",
-        "name": {
-          "tr": "Detay",
-          "en": "Details",
-          "ar": "التفاصيل"
-        }
-      },
-      {
-        "id": "surec",
-        "name": {
-          "tr": "Süreç",
-          "en": "Process",
-          "ar": "سير العمل"
-        }
-      }
-    ]
+    "closeLabel": {
+      "tr": "Kapat",
+      "en": "Close",
+      "ar": "إغلاق"
+    },
+    "prevLabel": {
+      "tr": "Önceki görsel",
+      "en": "Previous image",
+      "ar": "الصورة السابقة"
+    },
+    "nextLabel": {
+      "tr": "Sonraki görsel",
+      "en": "Next image",
+      "ar": "الصورة التالية"
+    },
+    "openLabel": {
+      "tr": "Büyüt",
+      "en": "Enlarge",
+      "ar": "تكبير"
+    },
+    "counter": {
+      "tr": "{i} / {n}",
+      "en": "{i} / {n}",
+      "ar": "{i} من {n}"
+    }
   },
   "data": [
     {
       "img": "",
-      "title": {
-        "tr": "Giriş alanı",
-        "en": "Entrance area",
-        "ar": "منطقة المدخل"
-      },
-      "cat": "mekan",
-      "w": 800,
-      "h": 1000,
-      "alt": {
-        "tr": "Aydınlık giriş alanı",
-        "en": "Bright entrance area",
-        "ar": "منطقة مدخل مضيئة"
-      }
-    },
-    {
-      "img": "",
-      "title": {
-        "tr": "Ana salon",
-        "en": "Main hall",
-        "ar": "القاعة الرئيسية"
-      },
-      "cat": "mekan",
       "w": 1200,
       "h": 800,
+      "title": {
+        "tr": "Görsel başlığı",
+        "en": "Image title",
+        "ar": "عنوان الصورة"
+      },
       "alt": {
-        "tr": "Geniş ana salon",
-        "en": "Spacious main hall",
-        "ar": "قاعة رئيسية واسعة"
+        "tr": "Görsel açıklaması",
+        "en": "Image description",
+        "ar": "وصف الصورة"
       }
     },
     {
       "img": "",
+      "w": 800,
+      "h": 1000,
       "title": {
-        "tr": "Malzeme seçimi",
-        "en": "Material selection",
-        "ar": "اختيار المواد"
+        "tr": "Görsel başlığı",
+        "en": "Image title",
+        "ar": "عنوان الصورة"
       },
-      "cat": "detay",
+      "alt": {
+        "tr": "Görsel açıklaması",
+        "en": "Image description",
+        "ar": "وصف الصورة"
+      }
+    },
+    {
+      "img": "",
       "w": 1000,
       "h": 1000,
+      "title": {
+        "tr": "Görsel başlığı",
+        "en": "Image title",
+        "ar": "عنوان الصورة"
+      },
       "alt": {
-        "tr": "Yakın çekim doku",
-        "en": "Close-up texture",
-        "ar": "نسيج بلقطة مقرّبة"
+        "tr": "Görsel açıklaması",
+        "en": "Image description",
+        "ar": "وصف الصورة"
       }
     },
     {
       "img": "",
-      "title": {
-        "tr": "Aydınlatma",
-        "en": "Lighting",
-        "ar": "الإضاءة"
-      },
-      "cat": "detay",
-      "w": 800,
-      "h": 1000,
-      "alt": {
-        "tr": "Sıcak ışıklı detay",
-        "en": "Warm-lit detail",
-        "ar": "تفصيل بإضاءة دافئة"
-      }
-    },
-    {
-      "img": "",
-      "title": {
-        "tr": "Çizim masası",
-        "en": "Drafting table",
-        "ar": "طاولة الرسم"
-      },
-      "cat": "surec",
       "w": 1200,
       "h": 800,
+      "title": {
+        "tr": "Görsel başlığı",
+        "en": "Image title",
+        "ar": "عنوان الصورة"
+      },
       "alt": {
-        "tr": "Çalışma masasında planlar",
-        "en": "Plans on the work table",
-        "ar": "مخططات على طاولة العمل"
+        "tr": "Görsel açıklaması",
+        "en": "Image description",
+        "ar": "وصف الصورة"
       }
     },
     {
       "img": "",
-      "title": {
-        "tr": "Uygulama",
-        "en": "On site",
-        "ar": "التنفيذ"
-      },
-      "cat": "surec",
-      "w": 1000,
-      "h": 1000,
-      "alt": {
-        "tr": "Uygulama aşaması",
-        "en": "Installation stage",
-        "ar": "مرحلة التنفيذ"
-      }
-    },
-    {
-      "img": "",
-      "title": {
-        "tr": "Teslim",
-        "en": "Handover",
-        "ar": "التسليم"
-      },
-      "cat": "mekan",
       "w": 800,
       "h": 1000,
+      "title": {
+        "tr": "Görsel başlığı",
+        "en": "Image title",
+        "ar": "عنوان الصورة"
+      },
       "alt": {
-        "tr": "Teslim edilen mekan",
-        "en": "Finished space",
-        "ar": "المساحة بعد التسليم"
+        "tr": "Görsel açıklaması",
+        "en": "Image description",
+        "ar": "وصف الصورة"
       }
     },
     {
       "img": "",
+      "w": 1600,
+      "h": 900,
       "title": {
-        "tr": "Son dokunuşlar",
-        "en": "Finishing touches",
-        "ar": "اللمسات الأخيرة"
+        "tr": "Görsel başlığı",
+        "en": "Image title",
+        "ar": "عنوان الصورة"
       },
-      "cat": "detay",
-      "w": 1200,
-      "h": 800,
       "alt": {
-        "tr": "Son dokunuş detayı",
-        "en": "Finishing detail",
-        "ar": "تفصيل اللمسات الأخيرة"
+        "tr": "Görsel açıklaması",
+        "en": "Image description",
+        "ar": "وصف الصورة"
       }
     }
-  ],
-  "veri": {
-    "statik": true,
-    "dinamik": false,
-    "kaynak": "desing/data"
-  }
+  ]
 }

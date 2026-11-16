@@ -33,7 +33,7 @@ if (pagesettingjson) {
    dis baglanti, "#", "//" ve zaten "/tr/..." ile baslayan yollar aynen kalir. "#kesit" ve "?sorgu" korunur. */
 function menuEt3Href(url) {
   var u = url == null ? "" : String(url).trim();
-  if (!/^\/(?!\/)/.test(u) || /^\/(tr|en|ar|de|fr|ru|es|it|nl)(\/|$|[?#])/.test(u)) {
+  if (!/^\/(?!\/)/.test(u) || (typeof wmLangInfo === "function" ? (function (m) { return !!m && !wmLangInfo(m[1]).katalogDisi; })(/^\/([a-z]{2,3})(\/|$|[?#])/.exec(u)) : /^\/(tr|en|ar|de|fr|ru|es|it|nl)(\/|$|[?#])/.test(u)) /* G1: dil öneki katalogdan */) {
     return u || "#";
   }
   var tail = "";
@@ -88,7 +88,8 @@ var currentPagePath = (page && typeof page === "object" && page.path !== undefin
 for (var key in webmakerdata.setting.langs) {
   if (webmakerdata.setting.langs[key] == true) {
     var langUrl = wxLangHref(key, currentPagePath || "");
-    langhtml += `<li><a href="${langUrl}"><img height="25" src="/src/lang/${key}.png" alt="${key}" loading="lazy"></a></li>`;
+    /* G1: tek üretici (hreflang + aria-current; png yoksa kod) — wmLangLi yoksa eski biçim */
+langhtml += typeof wmLangLi === "function" ? wmLangLi(key, langUrl, { style: "flag" }) : `<li><a href="${langUrl}"><img height="25" src="/src/lang/${key}.png" alt="${key}" loading="lazy"></a></li>`;
   }
 }
 html = html.replace(new RegExp("{{langhtml}}", "g"), langhtml);

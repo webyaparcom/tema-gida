@@ -1,202 +1,86 @@
-<section class="modulex-faq">
-  <div class="modulex-faq-container">
-    <div class="modulex-faq-header">
-      <div class="modulex-faq-badge">{{badge}}</div>
-      <h2 class="modulex-faq-title">{{title}}</h2>
-      <p class="modulex-faq-desc">{{description}}</p>
-    </div>
-    <div class="modulex-faq-list">
-      {{html}}
-    </div>
+<section class="modulex-sss-zigzag{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-sss-zigzag-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
 </section>
 
 <style>
-  .modulex-faq {
-    width: 100%;
-    padding: 80px 20px;
-    background: --bgcolor--;
-    box-sizing: border-box;
-  }
+  /* sss-zigzag — Hepsi açık, ritmik zigzag okuma (sol-sağ salınım); az sayıda (3–6) önemli soru için sahne düzeni. */
+  .modulex-sss-zigzag { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-sss-zigzag *, .modulex-sss-zigzag *::before, .modulex-sss-zigzag *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-sss-zigzag :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-sss-zigzag :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-sss-zigzag :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-sss-zigzag :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-sss-zigzag img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-sss-zigzag) img { height: auto; }
+  .modulex-sss-zigzag [hidden] { display: none !important; }
+  .modulex-sss-zigzag :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-sss-zigzag :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-sss-zigzag-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-sss-zigzag-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-sss-zigzag--bassiz .modulex-sss-zigzag-bas { display: none; }
+  .modulex-sss-zigzag-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-sss-zigzag-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-sss-zigzag-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-sss-zigzag-bas { max-width: 780px; margin-inline: auto; text-align: center; justify-items: center; }
+  .modulex-sss-zigzag-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-sss-zigzag-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-sss-zigzag-dugme:hover { transform: translateY(-2px); }
+  .modulex-sss-zigzag-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-sss-zigzag-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-sss-zigzag-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-faq-container {
-    max-width: --max--;
-    margin: 0 auto;
-  }
-
-  .modulex-faq-header {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .modulex-faq-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit #fff → token (açık kırmızı üstünde 3,07:1 idi) */
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .modulex-faq-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-faq-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-faq-list {
-    max-width: 820px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .modulex-faq-item {
-    background: --cardbg--;
-    border: 1px solid --bordercolor--;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
-  }
-
-  .modulex-faq-item.modulex-faq-open {
-    border-color: --accent--;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
-  }
-
-  .modulex-faq-question {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 14px;
-    padding: 18px 22px;
-    min-height: 44px;
-    background: transparent;
-    border: none;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 600;
-    color: --titlecolor--;
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-
-  .modulex-faq-question .material-symbols-outlined {
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-    color: --accent--;
-  }
-
-  .modulex-faq-open .modulex-faq-question .material-symbols-outlined {
-    transform: rotate(180deg);
-  }
-
-  .modulex-faq-answer {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.35s ease;
-  }
-
-  .modulex-faq-open .modulex-faq-answer {
-    grid-template-rows: 1fr;
-  }
-
-  .modulex-faq-answer-inner {
-    min-height: 0;
-    overflow: hidden;
-    padding: 0 22px;
-    font-size: 15px;
-    line-height: 1.75;
-    color: --textcolor--;
-  }
-
-  .modulex-faq-answer-inner::after {
-    content: "";
-    display: block;
-    height: 20px;
-  }
-
-  @keyframes modulexFaqIn {
-    from {
-      opacity: 0;
-      transform: translateY(12px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .modulex-faq-item {
-    animation: modulexFaqIn 0.5s ease both;
-  }
-
+  .modulex-sss-zigzag-liste { display: grid; gap: clamp(20px, 3vw, 32px); }
+  .modulex-sss-zigzag-satir { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(18px, 4vw, 56px); align-items: center; transition: opacity 0.6s ease, transform 0.6s ease; }
+  .modulex-sss-zigzag--hazir:not(.modulex-sss-zigzag--gor) .modulex-sss-zigzag-satir { opacity: 0; transform: translateY(20px); }
+  .modulex-sss-zigzag-satir:nth-child(even) .modulex-sss-zigzag-sol { order: 2; }
+  .modulex-sss-zigzag-satir:nth-child(even) { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+  .modulex-sss-zigzag-sol { display: grid; gap: 8px; }
+  .modulex-sss-zigzag-no { color: --accentInk--; font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .modulex-sss-zigzag-soru { font-size: clamp(1.25rem, 2.4vw, 1.7rem); font-weight: 750; line-height: 1.25; }
+  .modulex-sss-zigzag-sag { padding: clamp(20px, 3vw, 32px); border-radius: --yuvarlak--; background: --kartBg--; border-inline-start: 4px solid --accent--; }
+  .modulex-sss-zigzag-satir:nth-child(even) .modulex-sss-zigzag-sag { border-inline-start: 0; border-inline-end: 4px solid --accent--; }
+  .modulex-sss-zigzag-cevap { color: --muted--; font-size: 1.04rem; line-height: 1.75; }
   @media (max-width: 768px) {
-    .modulex-faq {
-      padding: 48px 14px;
-    }
-
-    .modulex-faq-title {
-      font-size: 26px;
-    }
-
-    .modulex-faq-question {
-      font-size: 15px;
-      padding: 16px 16px;
-    }
-
-    .modulex-faq-answer-inner {
-      padding: 0 16px;
-    }
-
-    .modulex-faq-answer-inner::after {
-      height: 16px;
-    }
-
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-sss-zigzag-satir, .modulex-sss-zigzag-satir:nth-child(even) { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+    .modulex-sss-zigzag-satir:nth-child(even) .modulex-sss-zigzag-sol { order: 0; }
+    .modulex-sss-zigzag-satir:nth-child(even) .modulex-sss-zigzag-sag { border-inline-end: 0; border-inline-start: 4px solid --accent--; }
   }
+  .modulex-sss-zigzag-bag { display: inline-flex; align-items: center; gap: 6px; margin-block-start: 10px; color: --accentInk--; font-weight: 700; text-decoration: none; transition: gap 0.25s ease; }
+  .modulex-sss-zigzag-bag:hover { gap: 10px; text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-sss-zigzag-bag .material-symbols-outlined { font-size: 18px; }
 
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sss-zigzag :is(.modulex-sss-zigzag-baslik, .modulex-sss-zigzag-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-sss-zigzag-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-sss-zigzag { padding-inline: 16px; }
+  }
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-sss-zigzag *, .modulex-sss-zigzag *::before, .modulex-sss-zigzag *::after { animation: none !important; transition: none !important; }
   }
 </style>
-
 <script>
-  function modulexFaqToggle(btn) {
-    var item = btn.parentElement;
-    var isOpen = item.classList.contains("modulex-faq-open");
-    var list = item.parentElement.children;
-    var i;
-    for (i = 0; i < list.length; i++) {
-      list[i].classList.remove("modulex-faq-open");
-      var otherBtn = list[i].querySelector(".modulex-faq-question");
-      if (otherBtn) {
-        otherBtn.setAttribute("aria-expanded", "false");
-      }
-    }
-    if (!isOpen) {
-      item.classList.add("modulex-faq-open");
-      btn.setAttribute("aria-expanded", "true");
-    }
-  }
+  (() => {
+    const P = "modulex-sss-zigzag";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const gozlem = (s, P, az) => {
+        const gor = () => s.classList.add(P + "--gor");
+        s.classList.add(P + "--hazir");
+        if (az || !("IntersectionObserver" in window)) { gor(); return; }
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { gor(); io.disconnect(); } });
+        }, { threshold: 0.15 });
+        io.observe(s);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      gozlem(s, P, az);
+    });
+  })();
 </script>

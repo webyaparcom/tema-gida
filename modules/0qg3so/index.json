@@ -1,68 +1,51 @@
 {
-  "name": "Zaman Çizelgesi 1",
+  "name": "Zaman Dev Yıl — filigran yıllı tam genişlik satırlar",
+  "description": "Koyu zeminde her dönem tam genişlikte bir bant; yıl bandın arkasında dev, soluk bir filigran; başlık ve metin önde, bantlar dönüşümlü hizalanır. Yıl görsel zemin olur (filigran tipografi); afiş/film jeneriği havası, çizgi veya ikon yok. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
+  "version": "1.0.0",
+  "icon": "calendar_month",
+  "category": "timeline",
+  "subCategory": "watermark-year",
+  "tags": [
+    "timeline",
+    "watermark",
+    "typographic",
+    "dark",
+    "bands",
+    "rtl",
+    "fabrika"
+  ],
   "desing": {
     "max": "1200px",
-    "bgcolor": "#ffffff",
-    "titlecolor": "#1e293b",
-    "textcolor": "#475569",
-    "accent": "#DE6D26",
-    "linecolor": "#e2e8f0",
-    "badge": {
-      "tr": "Tarihçe",
-      "en": "Timeline"
-    },
-    "title": {
-      "tr": "Yolculuğumuz",
-      "en": "Our Journey"
-    },
-    "description": {
-      "tr": "Kuruluşumuzdan bugüne önemli dönüm noktalarımız.",
-      "en": "Key milestones from our founding to today."
-    },
-    "accentText": "#ffffff"
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "bg": "var(--mx-site-text, #111318)",
+    "text": "var(--mx-site-bg, #ffffff)",
+    "muted": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 78%, var(--mx-site-text, #111318))",
+    "kartBg": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 7%, transparent)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-bg, #ffffff) 18%, transparent)",
+    "accent": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 45%, var(--mx-site-bg, #ffffff))",
+    "accentText": "var(--mx-site-text, #111318)",
+    "vurguBg": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 55%, var(--mx-site-bg, #ffffff))",
+    "vurguText": "var(--mx-site-text, #111318)",
+    "bgcolor": "var(--mx-site-text, #111318)",
+    "color": "var(--mx-site-bg, #ffffff)"
   },
-  "data": [
-    {
-      "year": "2015",
-      "title": {
-        "tr": "Kuruluş",
-        "en": "Founded"
-      },
-      "text": {
-        "tr": "Küçük bir ekiple ilk ofisimizde yola çıktık.",
-        "en": "We started in our first office with a small team."
-      }
-    },
-    {
-      "year": "2019",
-      "title": {
-        "tr": "Büyüme",
-        "en": "Growth"
-      },
-      "text": {
-        "tr": "Ekibimizi büyütüp yeni hizmet alanlarına açıldık.",
-        "en": "We grew the team and expanded into new service areas."
-      }
-    },
-    {
-      "year": "2024",
-      "title": {
-        "tr": "Bugün",
-        "en": "Today"
-      },
-      "text": {
-        "tr": "Yüzlerce tamamlanan projeyle sektörde güvenilir bir çözüm ortağıyız.",
-        "en": "With hundreds of completed projects, we are a trusted solution partner."
-      }
-    }
-  ],
-  "category": "timeline",
-  "description": "Zaman çizelgesi modülü. Kurumsal tarihçe, süreç adımları veya yol haritasını dikey çizgi + yıl rozetiyle listeler. Çok dilli başlık/metin ve animasyonlu giriş içerir.",
-  "version": "1.0.0",
-  "icon": "timeline",
+  "data": [],
   "veri": {
     "statik": true,
     "dinamik": false,
-    "kaynak": "desing/data"
+    "kaynak": "data",
+    "alanlar": {
+      "etiket": "yıl / tarih / dönem (dil sözlüğü ya da düz metin)",
+      "baslik": "dil sözlüğü (zorunlu)",
+      "metin": "dil sözlüğü",
+      "ikon": "Material Symbols adı",
+      "img": "görsel yolu (destekleyen yerleşimde)",
+      "url": "iç/dış bağlantı"
+    }
   }
 }
